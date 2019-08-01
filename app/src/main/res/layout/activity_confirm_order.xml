@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.ConfirmOrderActivity">
+    <include
+        android:id="@+id/include2"
+        layout="@layout/snippet_toolbar"/>
+
+    <Button
+        android:id="@+id/inShopBtn"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/twinButtonHeight"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/right_button_rect_yellow"
+        android:tag="bold"
+        android:text="@string/in_shop"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="@dimen/textSize"
+        app:layout_constraintEnd_toStartOf="@+id/guidelineRight"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/middleGuideLine"
+        app:layout_constraintTop_toBottomOf="@+id/locationEditTxt" />
+
+    <Button
+        android:id="@+id/withoutOffersBtn"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/twinButtonHeight"
+        android:background="@drawable/left_button_rect_grey"
+        android:tag="bold"
+        android:text="@string/in_home"
+        android:textAllCaps="false"
+        android:textSize="@dimen/textSize"
+        app:layout_constraintEnd_toStartOf="@+id/middleGuideLine"
+        android:layout_marginTop="10dp"
+        app:layout_constraintStart_toStartOf="@+id/guidelineLeft"
+        app:layout_constraintTop_toBottomOf="@+id/locationEditTxt" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/middleGuideLine"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.5" />
+    <android.support.constraint.Guideline
+        android:id="@+id/guidelineLeft"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="@dimen/verticalGuidelineMargin" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guidelineRight"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintGuide_end="@dimen/verticalGuidelineMargin" />
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/topViewHeight"
+        android:layout_marginTop="50dp"
+        android:background="@color/yellow"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/timeTxt"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/viewsHeight"
+        android:layout_marginTop="@dimen/innerSpacing"
+        android:background="@drawable/edit_text_back"
+        android:gravity="center_vertical"
+        android:paddingStart="@dimen/editTextStartPadding"
+        android:paddingEnd="@dimen/editTextEndPadding"
+        android:text="@string/pick_time"
+        android:tag="regularFont"
+        android:textColor="@color/darkGrey"
+        app:layout_constraintEnd_toStartOf="@+id/guidelineRight"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/guidelineLeft"
+        app:layout_constraintTop_toBottomOf="@+id/dateTxt" />
+
+    <TextView
+        android:id="@+id/dateTxt"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/viewsHeight"
+        android:background="@drawable/edit_text_back"
+        android:gravity="center_vertical"
+        android:paddingStart="@dimen/editTextStartPadding"
+        android:paddingEnd="@dimen/editTextEndPadding"
+        android:tag="regularFont"
+        android:text="@string/pick_a_date"
+        android:textColor="@color/darkGrey"
+        app:layout_constraintEnd_toStartOf="@+id/guidelineRight"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/guidelineLeft"
+        app:layout_constraintTop_toTopOf="@+id/guideline2" />
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/frameLayout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/innerSpacing"
+        app:layout_constraintEnd_toStartOf="@+id/guidelineRight"
+        app:layout_constraintStart_toStartOf="@+id/guidelineLeft"
+        app:layout_constraintTop_toBottomOf="@+id/inShopBtn">
+
+        <TextView
+            android:id="@+id/textView23"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/the_service"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:textSize="@dimen/textSize"
+            android:tag="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <View
+            android:id="@+id/divider6"
+            android:layout_width="0dp"
+            android:layout_height="2dp"
+            android:background="@color/yellow"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/textView23"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginEnd="8dp"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <View
+            android:id="@+id/divider8"
+            android:layout_width="0dp"
+            android:layout_height="2dp"
+            android:layout_marginStart="8dp"
+            android:background="@color/yellow"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/textView23"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </android.support.constraint.ConstraintLayout>
+
+    <EditText
+        android:id="@+id/locationEditTxt"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/viewsHeight"
+        android:layout_marginTop="@dimen/innerSpacing"
+        android:background="@drawable/edit_text_back"
+        android:ems="10"
+        android:textCursorDrawable="@null"
+        android:textColor="@color/black"
+        android:gravity="center_vertical"
+        android:hint="@string/location"
+        android:inputType="textEmailAddress"
+        android:paddingStart="@dimen/editTextStartPadding"
+        android:paddingEnd="@dimen/editTextEndPadding"
+        android:tag="regularFont"
+        android:textColorHint="@color/darkGrey"
+        android:textSize="@dimen/textSize"
+        app:layout_constraintEnd_toStartOf="@+id/guidelineRight"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/guidelineLeft"
+        app:layout_constraintTop_toBottomOf="@+id/timeTxt" />
+
+
+    <Button
+        android:id="@+id/continueBtn"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/viewsHeight"
+        android:background="@drawable/rounded_green_button"
+        android:tag="bold"
+        android:text="@string/continue2"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toTopOf="@+id/guideline3"
+        app:layout_constraintEnd_toStartOf="@+id/guidelineRight"
+        app:layout_constraintStart_toStartOf="@+id/guidelineLeft" />
+
+    <TextView
+        android:id="@+id/textView26"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/iconStartMargin"
+        android:text="@string/calendarIcon"
+        android:textSize="@dimen/iconTextSize"
+        android:textColor="@color/colorAccent"
+        android:tag="icon"
+        android:padding="@dimen/iconTextPadding"
+        app:layout_constraintBottom_toBottomOf="@+id/dateTxt"
+        app:layout_constraintStart_toStartOf="@+id/dateTxt"
+        app:layout_constraintTop_toTopOf="@+id/dateTxt" />
+
+    <TextView
+        android:id="@+id/textView27"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/iconStartMargin"
+        android:tag="icon"
+        android:text="@string/clockIcon"
+        android:textSize="@dimen/iconTextSize"
+        android:textColor="@color/colorAccent"
+        android:padding="@dimen/iconTextPadding"
+        app:layout_constraintBottom_toBottomOf="@+id/timeTxt"
+        app:layout_constraintStart_toStartOf="@+id/timeTxt"
+        app:layout_constraintTop_toTopOf="@+id/timeTxt" />
+
+    <TextView
+        android:id="@+id/locationIcon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/iconStartMargin"
+        android:tag="icon"
+        android:text="@string/locationIcon"
+        android:textSize="@dimen/iconTextSize"
+        android:textColor="@color/colorAccent"
+        android:padding="@dimen/iconTextPadding"
+        app:layout_constraintBottom_toBottomOf="@+id/locationEditTxt"
+        app:layout_constraintStart_toStartOf="@+id/locationEditTxt"
+        app:layout_constraintTop_toTopOf="@+id/locationEditTxt" />
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="@dimen/horizontalTopGuidelineMargin" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_end="@dimen/horizontalBottomGuidelineMargin" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/orderDetailsList"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="10dp"
+        app:layout_constraintBottom_toTopOf="@+id/continueBtn"
+        app:layout_constraintEnd_toEndOf="@id/guidelineRight"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@id/guidelineLeft"
+        app:layout_constraintTop_toBottomOf="@+id/frameLayout" />
+</android.support.constraint.ConstraintLayout>

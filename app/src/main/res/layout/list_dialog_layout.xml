@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:id="@+id/root"
+    android:layout_height="wrap_content"
+    android:background="@drawable/rounded_corners_dialog_back"
+    >
+
+
+    <TextView
+        android:id="@+id/dialogNameTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:tag="bold"
+        android:text=""
+        android:textColor="@color/black"
+        android:textSize="@dimen/toolbarTextSize"
+        android:textStyle="" />
+
+    <TextView
+        android:id="@+id/closeBtn"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:tag="icon"
+        android:gravity="center"
+        android:background="@drawable/yellow_circle"
+        android:textColor="@color/white"
+        android:textSize="@dimen/textSize"
+        android:text="@string/closeIcon" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/dialogList"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_below="@id/closeBtn"
+        android:tag="bold" />
+
+
+    <LinearLayout
+        android:id="@+id/linearRoot"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/closeBtn"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="40dp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/errorIconTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:tag="icon"
+            android:text="@string/errorIcon"
+            android:textColor="@color/darkGrey"
+            android:textSize="40sp"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/errorMessageTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:tag="bold"
+            android:textColor="@color/darkGrey"
+            android:textSize="@dimen/textSize" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/addBtn"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/viewsHeight"
+        android:text="@string/add"
+        android:tag="bold"
+        android:layout_margin="10dp"
+        android:textColor="@color/white"
+        android:textAllCaps="false"
+        android:background="@drawable/rounded_yellow_button"
+        android:layout_below="@id/dialogList"
+        />
+
+  <android.support.constraint.ConstraintLayout
+      android:visibility="gone"
+      android:id="@+id/commentView"
+      android:layout_width="match_parent"
+      android:layout_below="@id/dialogList"
+     android:layout_margin="10dp"
+      android:layout_height="wrap_content">
+
+      <EditText
+          android:id="@+id/messageEditTxt"
+          android:layout_width="0dp"
+          android:layout_height="@dimen/viewsHeight"
+          android:background="@drawable/edit_text_back"
+          android:ems="10"
+          android:hint="@string/write_a_comment"
+          android:inputType="textPersonName"
+          android:paddingStart="10dp"
+          android:paddingEnd="10dp"
+          android:layout_marginEnd="10dp"
+          android:tag="regularFont"
+          android:textColor="@color/black"
+          android:textCursorDrawable="@null"
+          app:layout_constraintEnd_toStartOf="@+id/sendBtn"
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintBottom_toBottomOf="parent" />
+
+      <TextView
+          android:id="@+id/sendBtn"
+          android:layout_width="@dimen/circleButtonDimension"
+          android:layout_height="@dimen/circleButtonDimension"
+          android:background="@drawable/yellow_circle"
+          android:gravity="center"
+          android:padding="@dimen/iconTextPadding"
+          android:tag="icon"
+          android:text="@string/sendIcon"
+          android:textColor="@color/white"
+          android:textSize="@dimen/iconTextSize"
+          app:layout_constraintBottom_toBottomOf="parent"
+          app:layout_constraintEnd_toEndOf="parent"/>
+
+  </android.support.constraint.ConstraintLayout>
+
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/dialogNameTxt"
+        android:id="@+id/cancelDialogView"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/message"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="10dp"
+            android:tag="regularFont"
+            android:textColor="@color/black"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView3"
+            app:layout_constraintBottom_toTopOf="@id/yesBtn"/>
+
+        <Button
+            android:id="@+id/yesBtn"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/viewsHeight"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/rounded_yellow_button"
+            android:text="@string/yes"
+            android:tag="bold"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/guideline4"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <Button
+            android:id="@+id/noBtn"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/viewsHeight"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/rounded_yellow_button"
+            android:text="@string/no"
+            android:tag="bold"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/guideline4" />
+
+        <android.support.constraint.Guideline
+            android:id="@+id/guideline4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.5" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/errorIcon"
+            android:textSize="60sp"
+            android:textColor="@color/red"
+            android:tag="icon"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </android.support.constraint.ConstraintLayout>
+
+</RelativeLayout>

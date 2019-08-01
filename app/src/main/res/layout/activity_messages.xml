@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rootSnack"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.MessagesActivity">
+    <include
+        android:id="@+id/include2"
+        layout="@layout/snippet_toolbar"/>
+
+    <include android:id="@+id/noDataView"
+        layout="@layout/snippet_empty_recyclerview_layout"/>
+
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guidelineLeft"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="@dimen/verticalGuidelineMargin" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guidelineRight"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintGuide_end="@dimen/verticalGuidelineMargin" />
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/topViewHeight"
+        android:layout_marginTop="50dp"
+        android:background="@color/yellow"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/messagesList"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="@dimen/innerSpacing"
+        android:clipToPadding="false"
+        app:layout_constraintBottom_toTopOf="@+id/messageEditTxt"
+        app:layout_constraintEnd_toStartOf="@+id/guidelineRight"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/guidelineLeft"
+        app:layout_constraintTop_toBottomOf="@id/guideline2">
+
+    </android.support.v7.widget.RecyclerView>
+
+    <EditText
+        android:id="@+id/messageEditTxt"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/viewsHeight"
+        android:layout_marginEnd="5dp"
+        android:background="@drawable/edit_text_back"
+        android:ems="10"
+        android:hint="@string/write_a_message"
+        android:inputType="textPersonName"
+        android:paddingStart="15dp"
+        android:paddingEnd="15dp"
+        android:tag="regularFont"
+        android:textColor="@color/black"
+        android:textCursorDrawable="@null"
+        app:layout_constraintBottom_toTopOf="@+id/guideline3"
+        app:layout_constraintEnd_toStartOf="@+id/sendBtn"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/guidelineLeft"
+        app:layout_constraintTop_toBottomOf="@+id/messagesList" />
+
+
+    <TextView
+        android:id="@+id/sendBtn"
+        android:layout_width="@dimen/circleButtonDimension"
+        android:layout_height="@dimen/circleButtonDimension"
+        android:background="@drawable/yellow_circle"
+        android:gravity="center"
+        android:padding="@dimen/iconTextPadding"
+        android:tag="icon"
+        android:text="@string/sendIcon"
+        android:textColor="@color/white"
+        android:textSize="@dimen/iconTextSize"
+        app:layout_constraintBottom_toTopOf="@+id/guideline3"
+        app:layout_constraintEnd_toStartOf="@+id/guidelineRight"
+        app:layout_constraintTop_toBottomOf="@+id/messagesList"
+        app:layout_constraintVertical_bias="1.0" />
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="52dp" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_end="@dimen/horizontalBottomGuidelineMargin" />
+    <include layout="@layout/video_loader_layout"/>
+
+</android.support.constraint.ConstraintLayout>

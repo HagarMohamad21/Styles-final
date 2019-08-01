@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/rootSnack"
+    tools:context=".Activities.SignupActivity">
+    <include
+        android:id="@+id/include2"
+        layout="@layout/snippet_toolbar"/>
+    <android.support.constraint.Guideline
+        android:id="@+id/guidelineLeft"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="@dimen/verticalGuidelineMargin" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guidelineRight"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintGuide_end="@dimen/verticalGuidelineMargin" />
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/topViewHeight"
+        android:layout_marginTop="50dp"
+        android:background="@color/yellow"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/profileImg"
+        android:layout_width="@dimen/avatarSize"
+        android:layout_height="@dimen/avatarSize"
+        android:background="@drawable/grey_circle"
+        android:gravity="center"
+        android:paddingBottom="15dp"
+        android:text="@string/personIcon"
+        android:tag="icon"
+        android:textColor="@color/white"
+        android:textSize="50dp"
+        app:layout_constraintEnd_toStartOf="@+id/guidelineRight"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="@+id/guidelineLeft"
+        app:layout_constraintTop_toTopOf="@+id/guideline2" />
+
+    <EditText
+        android:id="@+id/nameEditTxt"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/viewsHeight"
+        android:layout_marginTop="@dimen/innerSpacing"
+        android:background="@drawable/edit_text_back"
+        android:ems="10"
+        android:hint="@string/FullName"
+        android:inputType="textEmailAddress"
+        android:paddingStart="@dimen/editTextStartPadding"
+        android:paddingEnd="@dimen/editTextEndPadding"
+        android:tag="regularFont"
+        android:textColor="@color/black"
+        android:textColorHint="@color/darkGrey"
+        android:textCursorDrawable="@null"
+        android:textSize="@dimen/textSize"
+        app:layout_constraintEnd_toStartOf="@+id/guidelineRight"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/guidelineLeft"
+        app:layout_constraintTop_toBottomOf="@+id/updateProfileTxt" />
+
+    <EditText
+        android:id="@+id/userNameEditTxt"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/viewsHeight"
+        android:layout_marginTop="@dimen/innerSpacing"
+        android:background="@drawable/edit_text_back"
+        android:ems="10"
+        android:hint="@string/Email"
+        android:inputType="textEmailAddress"
+        android:paddingStart="@dimen/editTextStartPadding"
+        android:paddingEnd="@dimen/editTextEndPadding"
+        android:tag="regularFont"
+        android:textColor="@color/black"
+        android:textColorHint="@color/darkGrey"
+        android:textCursorDrawable="@null"
+        android:textSize="@dimen/textSize"
+        app:layout_constraintEnd_toStartOf="@+id/guidelineRight"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/guidelineLeft"
+        app:layout_constraintTop_toBottomOf="@+id/nameEditTxt" />
+
+
+    <EditText
+        android:id="@+id/mobileEditTxt"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/viewsHeight"
+      android:layout_marginTop="@dimen/innerSpacing"
+        android:background="@drawable/edit_text_back"
+        android:ems="10"
+        android:hint="@string/Mobile"
+        android:inputType="phone"
+        android:paddingStart="@dimen/editTextStartPadding"
+        android:paddingEnd="@dimen/editTextEndPadding"
+        android:tag="regularFont"
+        android:textColor="@color/black"
+        android:textColorHint="@color/darkGrey"
+        android:textCursorDrawable="@null"
+        android:textSize="@dimen/textSize"
+
+        app:layout_constraintEnd_toStartOf="@+id/guidelineRight"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/guidelineLeft"
+        app:layout_constraintTop_toBottomOf="@+id/userNameEditTxt" />
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/textInputLayout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/innerSpacing"
+        app:hintEnabled="false"
+        app:layout_constraintEnd_toStartOf="@+id/guidelineRight"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/guidelineLeft"
+        app:layout_constraintTop_toBottomOf="@+id/mobileEditTxt">
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/passwordEditTxt"
+            android:layout_width="match_parent"
+            android:textAlignment="viewStart"
+            android:layout_height="@dimen/viewsHeight"
+            android:background="@drawable/edit_text_back"
+            android:hint="@string/password"
+            android:inputType="textPassword"
+            android:paddingStart="@dimen/editTextStartPadding"
+            android:paddingEnd="@dimen/editTextEndPadding"
+            android:tag="regularFont"
+            android:textColor="@color/black"
+            android:textColorHint="@color/darkGrey"
+            android:textCursorDrawable="@null"
+            android:textSize="@dimen/textSize" />
+    </android.support.design.widget.TextInputLayout>
+
+    <Button
+        android:id="@+id/saveBtn"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/viewsHeight"
+        android:layout_marginBottom="@dimen/innerSpacing"
+        android:background="@drawable/rounded_green_button"
+        android:text="@string/create_account"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="@dimen/textSize"
+        android:tag="bold"
+        app:layout_constraintBottom_toTopOf="@+id/textView5"
+        app:layout_constraintEnd_toStartOf="@+id/guidelineRight"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/guidelineLeft" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:alpha=".5"
+        android:text="@string/policy"
+        android:textColor="@color/colorPrimary"
+        android:textSize="@dimen/textSize"
+        android:tag="regularFont"
+        app:layout_constraintBottom_toTopOf="@+id/guideline3"
+        app:layout_constraintEnd_toStartOf="@+id/guidelineRight"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/guidelineLeft" />
+
+    <TextView
+        android:id="@+id/updateProfileTxt"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="80dp"
+        android:background="@drawable/yellow_circle"
+        android:padding="5dp"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:textSize="@dimen/textSize"
+        android:tag="icon"
+        app:layout_constraintEnd_toStartOf="@+id/guidelineRight"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="@+id/guidelineLeft"
+        app:layout_constraintTop_toTopOf="@+id/profileImg"
+       android:text="@string/addIcon" />
+    <TextView
+        android:id="@+id/personIcon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/iconStartMargin"
+        android:textSize="@dimen/iconTextSize"
+        android:textColor="@color/colorAccent"
+        android:text="@string/personIcon"
+        android:tag="icon"
+        android:padding="@dimen/iconTextPadding"
+        app:layout_constraintBottom_toBottomOf="@+id/nameEditTxt"
+        app:layout_constraintStart_toStartOf="@+id/nameEditTxt"
+        app:layout_constraintTop_toTopOf="@+id/nameEditTxt" />
+    <TextView
+        android:id="@+id/emailIcon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/iconStartMargin"
+        android:textSize="@dimen/iconTextSize"
+        android:textColor="@color/colorAccent"
+        android:text="@string/emailIcon"
+        android:tag="icon"
+        android:padding="@dimen/iconTextPadding"
+        app:layout_constraintBottom_toBottomOf="@+id/userNameEditTxt"
+        app:layout_constraintStart_toStartOf="@+id/userNameEditTxt"
+        app:layout_constraintTop_toTopOf="@+id/userNameEditTxt" />
+    <TextView
+        android:id="@+id/phoneIcon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/iconStartMargin"
+        android:textSize="@dimen/iconTextSize"
+        android:textColor="@color/colorAccent"
+        android:text="@string/phoneIcon"
+        android:tag="icon"
+        android:padding="@dimen/iconTextPadding"
+        app:layout_constraintBottom_toBottomOf="@+id/mobileEditTxt"
+        app:layout_constraintStart_toStartOf="@+id/mobileEditTxt"
+        app:layout_constraintTop_toTopOf="@+id/mobileEditTxt" />
+    <TextView
+        android:id="@+id/passwordIcon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/passwordIcon"
+        android:tag="icon"
+        android:layout_marginStart="@dimen/iconStartMargin"
+        android:textSize="@dimen/iconTextSize"
+        android:padding="@dimen/iconTextPadding"
+        android:textColor="@color/colorAccent"
+        app:layout_constraintBottom_toBottomOf="@+id/textInputLayout"
+        app:layout_constraintStart_toStartOf="@+id/textInputLayout"
+        app:layout_constraintTop_toTopOf="@+id/textInputLayout" />
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="@dimen/horizontalTopGuidelineMargin" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_end="@dimen/horizontalBottomGuidelineMargin" />
+    <include layout="@layout/video_loader_layout"/>
+</android.support.constraint.ConstraintLayout>

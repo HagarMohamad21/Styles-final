@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="browse">عرض</string>
+    <string name="user_location">أنت هنا</string>
+    <string name="male">ذكر</string>
+    <string name="female">أنثي</string>
+    <string name="select_area">إختر منطقة</string>
+    <string name="create_an_account">تسجيل</string>
+    <string name="forgot_password">نسيت كلمةالمرور؟</string>
+    <string name="password">كلمة المرور</string>
+    <string name="userName">اسم المستخدم</string>
+    <string name="continue_with_facebook">تسجيل عبر فيسبوك</string>
+    <string name="login">دخول</string>
+    <string name="create_account">تسجيل</string>
+    <string name="policy">عند إنشاء حساب أنت توافق علي سياسة الخصوصية و شروط الإستخدام</string>
+    <string name="FullName">الإسم كامل</string>
+    <string name="confirm_order">التأكيد</string>
+    <string name="shop_location">موقع المحل</string>
+    <string name="the_service">الخدمات والفاتورة</string>
+    <string name="adults">بالغ</string>
+    <string name="children">طفل</string>
+
+    <string name="cash_payment">نقدا</string>
+    <string name="card_no">رقم الكارت</string>
+    <string name="submit">متابعة</string>
+    <string name="save">حفظ</string>
+
+    <string name="billPolicy"> لن يأخذ المحل المبلغ إلا إذا تم قبول الطلب</string>
+    <string name="cvv2">CVV كود</string>
+    <string name="card_name">الإسم علي الكارت</string>
+    <string name="exp_mm_yy">(MM YY)تاريخ الإنتهاء</string>
+    <string name="your_location">مكانك</string>
+    <string name="messages">الدعم</string>
+    <string name="type_message">إكتب رسالة</string>
+    <string name="gallery">المعرض</string>
+    <string name="hair_dressers">الصالونات</string>
+    <string name="shops">بدون عروض</string>
+    <string name="shops_with_offers">عروض</string>
+
+    <string name="your_bill">الدفع</string>
+    <string name="Mobile">رقم الهاتف</string>
+    <string name="signup">تسجيل</string>
+    <string name="add_your_photo">أضف صورة</string>
+    <string name="Email" >البريد الإلكتروني</string>
+    <string name="in_shop">في المحل</string>
+    <string name="in_home">في المنزل</string>
+    <string name="rating">التقييمات</string>
+    <string name="your_house_location">مكان منزلك</string>
+    <string name="total">الإجمالي</string>
+    <string name="continue2">تأكيد</string>
+    <string name="location">إكتب عنوانك</string>
+    <string name="total_cost">المبلغ الكلي</string>
+    <string name="more_details">التفاصيل</string>
+    <string name="rate">تقييم</string>
+    <string name="reasons">الأسباب</string>
+    <string name="cancel">إلغاء</string>
+    <string name="approved">مقبول</string>
+    <string name="rejected">مرفوض</string>
+    <string name="pending">منتظر</string>
+    <string name="choose_the_service">إختر الخدمة</string>
+    <string name="add">إضافة</string>
+    <string name="choose_the_offer">إختر العرض</string>
+
+    <!--Styles is an application that help you find the nearest barber shops and beauty centres to you-->
+    <!--, you can also have them over to your house with the best deals-->
+
+
+    <string name="about_us"> ستايلز هو تطبيق يساعدك علي إيجاد صالونات الحلاقة ومراكز التزيين الأقرب لك.
+    التطبيق ايضا يتيح لك طلب الخدمة بالمنزل بأسعار مناسبة</string>
+    <string name="contact_us">إتصل بنا</string>
+    <string name="pick_time">إختر وقت</string>
+    <string name="pick_a_date">إختر تاريخ</string>
+    <string name="write_a_message">إكتب رسالة</string>
+    <string name="choose_your_service">إختر الخدمة </string>
+    <string name="choose_your_offer">إختر العرض</string>
+    <string name="select_city">إختر محافظة</string>
+    <string name="give_rating">عمل تقييم</string>
+    <string name="write_a_comment">أكتب تعليق</string>
+    <string name="order_details">تفاصيل الطلب</string>
+    <string name="in_house_cost">تكلفة المنزل</string>
+    <string name="yes">نعم</string>
+    <string name="no">لا</string>
+    <string name="cancel_order">إلغاء الطلب</string>
+    <string name="confirm_cancel">هل أنت متأكد من الرغبة في إلغاء الطلب</string>
+    <string name="rejected_order">طلب مرفوض</string>
+    <string name="total_cost_with_price">الإجمالي : </string>
+    <string name="total_adults">عدد الأشخاص</string>
+    <string name="total_children">عدد الأطفال</string>
+    <string name="backIcon">&#xe905;</string>
+    <string name="items">الخدمات</string>
+    <string name="offers">العروض</string>
+    <string name="adult">البالغ #</string>
+    <string name="child">الطفل #</string>
+    <string name="home">الرئيسية</string>
+    <string name="account">حسابك</string>
+    <string name="about">حول</string>
+    <string name="orders">الطلبات</string>
+    <string name="credit_payment">إئتمان</string>
+
+    <string name="excellent">ممتاز</string>
+    <string name="very_good2">جيد جدا</string>
+    <string name="good">جيد</string>
+    <string name="okay">مقبول</string>
+    <string name="bad">ردئ</string>
+    <string name="type_shop_name">إكتب اسم المحل</string>
+    <string name="developed_by_zonetech">تطوير شركة زون تك</string>
+    <string name="switch_to_arabic">التحويل إلي الإنجليزية</string>
+
+
+
+    <string name="send">إرسال</string>
+    <string name="password_recovery">برجاء إدخال بريدك المسجل في حسابك وسيتم إرسال رسالة بها بيانات حسابك </string>
+    <string name="recovery">إستعادة</string>
+    <string name="order">الطلب</string>
+    <string name="details">التفاصيل</string>
+    <string name="choose_image">إختر صورة</string>
+    <string name="camera">الكاميرا</string>
+    <string name="homeservice">خدمة بالمنزل:</string>
+    <string name="shop_payment_method">طرق الدفع:</string>
+    <string name="CancelOrderMessage">تم إلغاء الطلب</string>
+    <string name="choose_an_action">إرسال التقييم</string>
+    <string name="send_a_message">إرسال كرسالة</string>
+    <string name="send_a_review">إرسال كتقييم</string>
+    <string name="feedback">شكرا علي رأيك</string>
+    <string name="confirm_login">يجب تسجيل الدخول للمتابعة</string>
+    <string name="area">المنطقة</string>
+    <string name="validation_string">من فضلك إملأ جميع البيانات</string>
+    <string name="no_messages">ليس لديك اي رسائل</string>
+    <string name="no_orders">ليس لديك اي طلبات</string>
+    <string name="no_images">لا يوجد صور</string>
+    <string name="no_ratings">لا يوجد تقييمات</string>
+    <string name="order_validation">من فضلك تأكد من اختيار خدمة واحدة علي الأقل لكل فرد</string>
+    <string name="connection_validation">من فضلك تأكد من وجود انترنت</string>
+    <string name="register_message">تم التسجيل بنجاح</string>
+    <string name="login_message">تم الدخول بنجاح</string>
+    <string name="somthing_went_wrong">حدث خطأ ما</string>
+    <string name="updateAccoutText">تم تحديث الحساب بنجاح</string>
+    <string name="no_service_message">لا يوجد خدمات</string>
+    <string name="no_offers_message">لا يوجد عروض</string>
+    <string name="no_result_message">لم يتم العثور علي نتائج</string>
+    <string name="logout"> تسجيل خروج</string>
+    <string name="confirm_logout" >هل انت متأكد من الرغبة في تسجيل الخروج؟</string>
+    <string name="image_failure">فشل في تحميل الصورة</string>
+    <string name="email_recovery">تم ارسال رسالة إستعادة إلي بريدك الإلكتروني</string>
+    <string name="terms">الأحكام</string>
+    <string name="coupon">  ادخل كود الكوبون</string>
+    <string name="order_placed">تم تسجيل الطلب </string>
+    <string name="finished">منتهي</string>
+
+
+    <string-array  name="statesArray">
+        <item >القاهرة</item>
+        <item>الجيزة</item>
+        <item>القليوبية</item>
+        <item>الشرقية</item>
+        <item>الغربية</item>
+        <item>الدقهلية</item>
+        <item>دمياط</item>
+        <item>المنوفية</item>
+        <item>كفر الشيخ</item>
+        <item>البحيرة</item>
+        <item>الاسكندرية</item>
+        <item>مطروح</item>
+        <item>بورسعيد</item>
+        <item>الاسماعيلية</item>
+        <item>السويس</item>
+        <item>الفيوم</item>
+        <item>بني سويف</item>
+        <item>المنيا</item>
+        <item>اسيوط</item>
+        <item>سوهاج</item>
+        <item>قنا</item>
+        <item>الاقصر</item>
+        <item>اسوان</item>
+        <item>البحر الاحمر</item>
+        <item>شمال سيناء</item>
+        <item>جنوب سيناء</item>
+        <item>الوادي الجديد</item>
+    </string-array>
+
+    <string-array name="errorcodes">
+        <item>البيانات المطلوبة خاطئة</item>
+        <item>لا يوجد اتصال بالخادم</item>
+        <item>لا يوجد اتصال بقاعدة البيانات</item>
+        <item>البيانات المرسلة خاطئة</item>
+        <item>خطا في استقبال البيانات</item>
+        <item>املا البيانات الناقصة</item>
+        <item>البريد او الجوال مسجل مسبقا</item>
+        <item>البريد او كلمة المرور خاطئة</item>
+        <item>الكوبون خطأ</item>
+    </string-array>
+
+</resources>

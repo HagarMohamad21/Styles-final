@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3a4750</color>
+    <color name="colorPrimaryDark">#3a4750</color>
+    <color name="colorAccent">#ff6464</color>
+    <color name="yellow">#ff6464</color>
+    <color name="orange">#F15A24</color>
+    <color name="red">#FF0000</color>
+    <color name="blue">#0071BC</color>
+    <color name="green">#00A14C</color>
+    <color name="grey">#D6CFC9</color>
+    <color name="white">#fff</color>
+    <color name="loghtYellow">#F5F2D0</color>
+    <color name="transparent_white">#90ffffff</color>
+    <color name="login_form_details">#ccffffff</color>
+    <color name="login_form_details_ligth">#00ffffff</color>
+    <color name="login_form_details_meduim">#66ffffff</color>
+    <color name="colorPrimaryOpaque">#cc2B1505</color>
+    <color name="black">#000</color>
+    <color name="lightGrey">#eeeeee</color>
+ <color name="darkGrey">#808080</color>
+    <color name="shadeOverlay">#cc000000</color>
+</resources>

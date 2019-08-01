@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/shopRoot"
+    android:paddingTop="10dp"
+    android:paddingBottom="10dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/galleryImg"
+        android:visibility="gone"
+        android:layout_width="150dp"
+        android:layout_height="140dp"
+        android:src="@mipmap/placeholder"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+    </ImageView>
+
+    <LinearLayout
+        android:id="@+id/nameRatingView"
+        android:paddingStart="10dp"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@id/profileImg"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <TextView
+            android:id="@+id/nameTxt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:tag="regularText"
+            android:textColor="@color/black"
+            android:textSize="@dimen/textSize" />
+
+        <TextView
+            android:id="@+id/ratingBar"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/textSize"
+            android:layout_marginBottom="10dp"
+            android:tag="icon"
+            android:textSize="@dimen/textSize" />
+
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:orientation="horizontal">
+          <TextView
+              android:id="@+id/paymentTxt"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:tag="bold"
+              android:text="@string/shop_payment_method"
+              android:textColor="@color/black"
+              android:textSize="@dimen/textSize" />
+          <TextView
+              android:layout_width="@dimen/iconTextSize"
+              android:layout_height="@dimen/iconTextSize"
+              android:text="@string/dollarIcon"
+              android:id="@+id/dollarIcon"
+              android:gravity="center"
+              android:layout_marginStart="5dp"
+              android:textColor="@color/green"/>
+
+          <TextView
+              android:layout_width="@dimen/iconTextSize"
+              android:layout_height="@dimen/iconTextSize"
+              android:text="@string/creditIcon"
+              android:id="@+id/cardIcon"
+              android:gravity="center"
+              android:layout_marginStart="5dp"
+              android:textColor="@color/green"/>
+
+      </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/homeServiceTxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/homeservice"
+                android:textColor="@color/black"
+                android:textSize="@dimen/textSize" />
+
+            <TextView
+                android:id="@+id/homeServiceTypeTxt"
+                android:layout_marginStart="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/yes"
+                android:textColor="@color/black"
+                android:textSize="@dimen/textSize" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/profileImg"
+        android:layout_width="120dp"
+        android:layout_height="100dp"
+        android:src="@mipmap/placeholder"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+    </ImageView>
+
+
+</android.support.constraint.ConstraintLayout>

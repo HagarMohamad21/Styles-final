@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:id="@+id/root"
+    android:background="@drawable/selected_item_back"
+    android:layout_gravity="center"
+    android:paddingTop="10dp"
+    android:paddingBottom="10dp"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/itemNameTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:gravity="center"
+        android:tag="regularFont"
+        android:textColor="@color/black"
+        android:textSize="@dimen/textSize"
+        app:layout_constraintStart_toEndOf="@+id/itemCheckBox"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="serviceservieserviceserviceervice" />
+
+    <TextView
+        android:id="@+id/rightMostTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="10dp"
+        android:layout_toEndOf="@id/itemNameTxt"
+        android:gravity="center"
+        android:tag="bold"
+        android:text="40 EGP"
+        android:textColor="@color/green"
+        android:textSize="@dimen/textSize"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <CheckBox
+        android:id="@+id/itemCheckBox"
+        android:layout_width="25dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="3dp"
+        android:buttonTint="@color/colorAccent"
+        android:clickable="false"
+        app:layout_constraintBottom_toBottomOf="@id/itemNameTxt"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/itemNameTxt" />
+
+    <TextView
+        android:id="@+id/itemIcon"
+        android:layout_width="@dimen/menueIconSize"
+        android:layout_height="@dimen/menueIconSize"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="3dp"
+        android:visibility="gone"
+        android:textColor="@color/colorAccent"
+        android:textSize="@dimen/menuIconTextSize"
+        android:gravity="center"
+        android:padding="@dimen/iconTextPadding"
+        android:tag="icon"
+        app:layout_constraintBottom_toBottomOf="@id/itemNameTxt"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/itemNameTxt" />
+
+
+    <TextView
+        android:id="@+id/serviceDetailsTxt"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:gravity="start"
+        android:tag="regularFont"
+        android:text="TextView"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/itemNameTxt" />
+   
+</android.support.constraint.ConstraintLayout>

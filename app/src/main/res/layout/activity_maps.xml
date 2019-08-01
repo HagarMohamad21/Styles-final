@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:clipToPadding="false"
+    android:layout_height="match_parent"
+    android:id="@+id/rootSnack">
+
+
+    <TextView
+        android:id="@+id/areaDialog"
+        android:tag="regularFont"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/viewsHeight"
+        android:layout_marginTop="@dimen/innerSpacing"
+        android:background="@drawable/edit_text_back"
+        android:orientation="horizontal"
+        android:visibility="invisible"
+        android:paddingStart="10dp"
+        android:textColor="@color/black"
+        android:text="@string/select_area"
+        android:gravity="center_vertical"
+        android:paddingEnd="@dimen/editTextStartPadding"
+        app:layout_constraintEnd_toStartOf="@+id/guidelineRight"
+        app:layout_constraintStart_toStartOf="@+id/guidelineLeft"
+        app:layout_constraintTop_toBottomOf="@id/cityDialog">
+
+
+    </TextView>
+
+    <TextView
+        android:id="@+id/cityDialog"
+        android:tag="regularFont"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/viewsHeight"
+        android:background="@drawable/edit_text_back"
+        android:orientation="horizontal"
+        android:visibility="invisible"
+        android:textColor="@color/black"
+        android:gravity="center_vertical"
+        android:paddingStart="10dp"
+        android:paddingEnd="@dimen/editTextStartPadding"
+        app:layout_constraintEnd_toStartOf="@+id/guidelineRight"
+        android:layout_marginTop="@dimen/innerSpacing"
+        app:layout_constraintStart_toStartOf="@+id/guidelineLeft"
+        app:layout_constraintTop_toBottomOf="@id/areaBtn"
+        android:text="@string/select_city"
+
+       />
+    <TextView
+        android:id="@+id/dropicon1"
+        android:visibility="invisible"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:text="@string/dropdownIcon"
+        android:textSize="@dimen/iconTextSize"
+        android:textColor="@color/colorAccent"
+        android:tag="icon"
+        android:padding="5dp"
+        app:layout_constraintBottom_toBottomOf="@+id/cityDialog"
+        app:layout_constraintEnd_toEndOf="@+id/cityDialog"
+        app:layout_constraintTop_toTopOf="@+id/cityDialog" />
+
+    <TextView
+        android:id="@+id/dropicon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:visibility="invisible"
+        android:text="@string/dropdownIcon"
+        android:textSize="@dimen/iconTextSize"
+        android:textColor="@color/colorAccent"
+        android:tag="icon"
+        android:padding="5dp"
+        app:layout_constraintBottom_toBottomOf="@+id/areaDialog"
+        app:layout_constraintEnd_toEndOf="@+id/areaDialog"
+        app:layout_constraintTop_toTopOf="@+id/areaDialog" />
+
+    <include
+        android:id="@+id/include"
+        layout="@layout/snippet_maps_toolbar" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guidelineLeft"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="@dimen/verticalGuidelineMargin" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guidelineRight"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintGuide_end="@dimen/verticalGuidelineMargin" />
+
+    <styles.zonetech.net.styles.Utils.RoundedView
+        android:id="@+id/mapView"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/mapHeight"
+        android:background="@drawable/linear_layout_complete_border"
+        android:layout_marginTop="10dp"
+        android:visibility="visible"
+        app:layout_constraintEnd_toStartOf="@+id/guidelineRight"
+        app:layout_constraintStart_toStartOf="@+id/guidelineLeft"
+        app:layout_constraintTop_toBottomOf="@id/areaBtn"
+        >
+
+        <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:map="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:id="@+id/map"
+            android:name="com.google.android.gms.maps.SupportMapFragment"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/mapHeight"
+            tools:context=".Activities.MapsActivity" />
+    </styles.zonetech.net.styles.Utils.RoundedView>
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/topViewHeight"
+        android:layout_marginTop="50dp"
+        android:background="@color/yellow"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:id="@+id/locationBtn"
+        style="?android:attr/buttonStyle"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/twinButtonHeight"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/left_button_rect_yellow"
+        android:gravity="center"
+        android:tag="icon"
+        android:text="@string/locationIcon"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toStartOf="@+id/middleGuideLine"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/guidelineLeft"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout3" />
+
+
+    <Button
+        android:id="@+id/areaBtn"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/twinButtonHeight"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/right_button_rect_grey"
+        android:tag="bold"
+        android:text="@string/area"
+        android:textAllCaps="false"
+        android:textSize="@dimen/textSize"
+        app:layout_constraintEnd_toStartOf="@+id/guidelineRight"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/middleGuideLine"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout3" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/middleGuideLine"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.5" />
+
+    <Button
+        android:id="@+id/browseBtn"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/viewsHeight"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/rounded_yellow_button"
+        android:tag="bold"
+        android:text="@string/browse"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toTopOf="@+id/loginBtn"
+        app:layout_constraintEnd_toStartOf="@+id/guidelineRight"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/guidelineLeft" />
+
+    <Button
+        android:id="@+id/loginBtn"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/viewsHeight"
+        android:background="@drawable/rounded_green_button"
+        android:tag="bold"
+        android:text="@string/login"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toTopOf="@+id/guideline3"
+        app:layout_constraintEnd_toStartOf="@+id/guidelineRight"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/guidelineLeft" />
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="@dimen/horizontalTopGuidelineMargin" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_end="@dimen/horizontalBottomGuidelineMargin" />
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/constraintLayout3"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toStartOf="@+id/guidelineRight"
+        app:layout_constraintStart_toStartOf="@+id/guidelineLeft"
+        app:layout_constraintTop_toBottomOf="@+id/guideline2">
+
+        <RadioGroup
+            android:id="@+id/radioGroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:gravity="center"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <android.support.v7.widget.AppCompatRadioButton
+                android:id="@+id/maleRadio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="@color/yellow"
+                android:tag="regularFont"
+                android:text="@string/male"
+                android:textColor="@color/colorPrimary"
+                android:textSize="17sp" />
+
+            <android.support.v7.widget.AppCompatRadioButton
+                android:id="@+id/femaleRadio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:buttonTint="@color/yellow"
+                android:tag="regularFont"
+                android:text="@string/female"
+                android:textColor="@color/colorPrimary"
+                android:textSize="17sp" />
+        </RadioGroup>
+
+        <View
+            android:id="@+id/divider2"
+            android:layout_width="0dp"
+            android:layout_height="2dp"
+            android:layout_marginEnd="8dp"
+            android:background="@color/colorAccent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/radioGroup"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <View
+            android:id="@+id/divider3"
+            android:layout_width="0dp"
+            android:layout_height="2dp"
+            android:layout_marginStart="8dp"
+            android:background="@color/colorAccent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/radioGroup"
+            app:layout_constraintTop_toTopOf="parent" />
+    </android.support.constraint.ConstraintLayout>
+    <include layout="@layout/video_loader_layout"/>
+</android.support.constraint.ConstraintLayout>

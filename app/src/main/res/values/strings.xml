@@ -1,0 +1,200 @@
+<resources>
+    <string name="app_name" translatable="false">Styles</string>
+
+    <string name="title_activity_maps" translatable="false">Map</string>
+
+    <string name="user_location">You are here</string>
+    <string name="male">Male</string>
+    <string name="female">Female</string>
+    <string name="select_area">Select city</string>
+    <string name="browse">Browse</string>
+    <string name="create_an_account">Create an account</string>
+    <string name="forgot_password">Forgot password?</string>
+    <string name="password">Password</string>
+    <string name="userName">User name</string>
+    <string name="continue_with_facebook">Continue with facebook</string>
+    <string name="login">Login</string>
+    <string name="create_account">Register</string>
+    <string name="policy">By creating an account you agree to the privacy policy and to the terms of use</string>
+    <string name="FullName">Full name</string>
+    <string name="confirm_order">Order</string>
+    <string name="shop_location">Shop Location</string>
+    <string name="the_service">The items and the bill</string>
+    <string name="adults">Adult</string>
+    <string name="children">Child</string>
+
+    <string name="cash_payment">Cash</string>
+    <string name="card_no">Card number</string>
+    <string name="submit">Submit</string>
+    <string name="save">Save</string>
+
+    <string name="billPolicy"> Your payment will not submit till the shop accept your order</string>
+    <string name="cvv2">CVV code</string>
+    <string name="card_name">Name on card</string>
+    <string name="exp_mm_yy">Expiration (MM YY)</string>
+    <string name="your_location">Your location</string>
+    <string name="messages">Support</string>
+    <string name="type_message">Type Message</string>
+    <string name="gallery">Gallery</string>
+    <string name="hair_dressers">Saloons</string>
+    <string name="shops">Without offers</string>
+    <string name="shops_with_offers">With offers</string>
+
+    <string name="your_bill">Payment</string>
+    <string name="Mobile">Mobile</string>
+    <string name="signup">Signup</string>
+    <string name="add_your_photo">Add your photo</string>
+    <string name="Email">Email</string>
+    <string name="in_shop">In shop</string>
+    <string name="in_home">In home</string>
+    <string name="rating">Reviews</string>
+    <string name="your_house_location">Your house location</string>
+    <string name="total">Total</string>
+    <string name="continue2">Confirm</string>
+    <string name="location">Type your address</string>
+    <string name="total_cost">Total cost</string>
+    <string name="more_details">Details</string>
+    <string name="rate">Rate</string>
+    <string name="reasons">Reasons</string>
+    <string name="cancel">Cancel</string>
+    <string name="approved">Approved</string>
+    <string name="rejected">Rejected</string>
+    <string name="pending">Pending</string>
+    <string name="choose_the_service">Choose the service</string>
+    <string name="choose_the_offer">Choose your offer</string>
+    <string name="about_us">Styles is an application that help you find the nearest barber shops and beauty centres to you
+        , you can also have them over to your house with the best deals.</string>
+    <string name="contact_us">Contact us</string>
+    <string name="pick_time">Pick time</string>
+    <string name="pick_a_date">Pick a date</string>
+    <string name="write_a_message">Type a message</string>
+    <string name="choose_your_service">Choose your service</string>
+    <string name="choose_your_offer">Choose your offer</string>
+    <string name="select_city">Select province</string>
+    <string name="give_rating">Give rating</string>
+    <string name="write_a_comment">Type a comment</string>
+    <string name="order_details">Order details</string>
+    <string name="in_house_cost">In house cost</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="cancel_order">Cancel order</string>
+    <string name="confirm_cancel">Are you sure you want to cancel this order ?</string>
+    <string name="rejected_order">Rejected order</string>
+    <string name="language" translatable="false">LanguagePref</string>
+    <string name="arabic" translatable="false">"ar"</string>
+
+    <string name="orders">Orders</string>
+    <string name="backIcon">&#xe90c;</string>
+    <string name="total_cost_with_price">Total cost: </string>
+    <string name="total_adults">Total adults</string>
+    <string name="total_children">Total childs</string>
+    <string name="items">Services</string>
+    <string name="offers">Offers</string>
+    <string name="adult">Adult #</string>
+    <string name="child">Child #</string>
+    <string name="home">Home</string>
+    <string name="account">Account</string>
+    <string name="about">About</string>
+    <string name="credit_payment">Credit</string>
+    <string name="excellent">Excellent</string>
+    <string name="very_good2">Very good</string>
+    <string name="good">Good</string>
+    <string name="okay">Okay</string>
+    <string name="bad">Bad</string>
+    <string name="type_shop_name">Type shop name</string>
+    <string name="developed_by_zonetech">Developed by ZoneTech</string>
+    <string name="switch_to_arabic">Switch to Arabic</string>
+    <string name="add">Add</string>
+
+
+
+    <string name="send">Send</string>
+    <string name="password_recovery">Please enter your email and a message will be sent to it with your account information </string>
+    <string name="recovery">Recovery</string>
+    <string name="order">Order</string>
+    <string name="details">Details</string>
+    <string name="choose_image">Choose image</string>
+    <string name="camera">Camera</string>
+    <string name="homeservice">Home service:</string>
+    <string name="shop_payment_method">Payment method:</string>
+    <string name="CancelOrderMessage">Order was cancelled</string>
+    <string name="choose_an_action">Send a review</string>
+    <string name="send_a_message">Send as message</string>
+    <string name="send_a_review">Send as review</string>
+    <string name="feedback">Thank you for your feedback</string>
+    <string name="confirm_login">You must login in order to continue</string>
+    <string name="area">Area</string>
+    <string name="validation_string">Please fill in all fields</string>
+    <string name="no_messages">You don\'t have any messages</string>
+    <string name="no_orders">You don\'t have any orders</string>
+    <string name="no_images">There are no images</string>
+    <string name="no_ratings">There are no reviews</string>
+    <string name="order_validation">Please make sure you choose at least one service or one offer for each person</string>
+
+    <string name="connection_validation">Please check your connection</string>
+    <string name="register_message">Register successfully</string>
+    <string name="login_message">Login successfully</string>
+    <string name="somthing_went_wrong">Something went wrong</string>
+    <string name="updateAccoutText">Account updated successfully</string>
+
+    <string-array name="statesArray">
+        <item>Cairo</item>
+        <item>Giza</item>
+        <item>Qalyubia</item>
+        <item>Sharqia</item>
+        <item>Gharbia</item>
+        <item>Dakahlia</item>
+        <item>Damietta</item>
+        <item>Monufia</item>
+        <item>Kafr El Sheikh</item>
+        <item>Beheira</item>
+        <item>Alexandria</item>
+        <item>Matruh</item>
+        <item>Port Said</item>
+        <item>Ismailia</item>
+        <item>Suez</item>
+        <item>Faiyum</item>
+        <item>Beni Suef</item>
+        <item>Minya</item>
+        <item>Asyut</item>
+        <item>Sohag</item>
+        <item>Qena</item>
+        <item>Luxor</item>
+        <item>Aswan</item>
+        <item>Red Sea</item>
+        <item>North Sinai</item>
+        <item>South Sinai</item>
+        <item>New Valley</item>
+    </string-array>
+
+    <string-array name="errorcodes">
+        <item>Invalid requested data</item>
+        <item>No server connection</item>
+        <item>No database connection</item>
+        <item>Invalid sent information</item>
+        <item>Error receiving information</item>
+        <item>Fill missing information</item>
+        <item>Duplicate email or phone</item>
+        <item>Invalid useremail or password</item>
+        <item>Invalid coupon</item>
+
+    </string-array>
+
+
+    <!-- FACEBOOK STRINGS -->
+    <string name="facebook_app_id" translatable="false">1210152639435285</string>
+    <string name="fb_login_protocol_scheme" translatable="false">fb1210152639435285</string>
+    <string name="no_service_message">No services found</string>
+    <string name="no_offers_message">No offers found</string>
+    <string name="no_result_message">No result found</string>
+    <string name="logout">Logout</string>
+    <string name="confirm_logout">Are you sure you want to logout? </string>
+    <string name="image_failure">Failed to load image</string>
+    <string name="email_recovery">Recovery message was sent to your email</string>
+    <string name="terms">Terms</string>
+    <string name="coupon">Enter coupon code</string>
+    <string name="order_placed">Order Placed Successfully</string>
+    <string name="finished">Finished</string>>
+
+
+</resources>

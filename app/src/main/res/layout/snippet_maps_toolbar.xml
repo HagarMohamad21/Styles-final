@@ -1,0 +1,81 @@
+
+<merge xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/toolbarHeight"
+        android:background="@color/colorPrimary">
+
+        <TextView
+            android:id="@+id/infoBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/toolbarIconMargin"
+            android:padding="@dimen/iconTextPadding"
+            android:textSize="@dimen/toolbarIconSize"
+            android:tag="icon"
+            android:textColor="@color/colorAccent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:text="@string/infoIcon" />
+
+        <TextView
+            android:id="@+id/searchBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/toolbarIconMargin"
+            android:tag="icon"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:padding="@dimen/iconTextPadding"
+            android:textSize="@dimen/toolbarIconSize"
+            android:textColor="@color/colorAccent"
+            android:text="@string/searchIcon"
+           />
+
+        <TextView
+            android:id="@+id/closeBtn"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@drawable/yellow_circle"
+            android:layout_marginEnd="@dimen/toolbarIconMargin"
+            android:padding="@dimen/iconTextPadding"
+            android:gravity="center"
+            android:tag="icon"
+            android:layout_marginBottom="4dp"
+            android:layout_marginTop="4dp"
+            android:visibility="invisible"
+            android:text="@string/closeIcon"
+            android:textColor="@color/white"
+            android:textSize="@dimen/textSize"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/searchEditTxt"
+            android:imeOptions="actionSearch"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:padding="5dp"
+            android:layout_marginBottom="4dp"
+            android:hint="@string/type_shop_name"
+            android:tag="bold"
+            android:textColorHint="@color/darkGrey"
+            android:background="@null"
+            android:textColor="@color/grey"
+            android:textCursorDrawable="@color/grey"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/closeBtn"
+            app:layout_constraintStart_toStartOf="@+id/infoBtn"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="1.0" />
+    </android.support.constraint.ConstraintLayout>
+</merge>

@@ -1,0 +1,17 @@
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+<item
+    android:drawable="@color/white"   >
+</item>
+<item android:bottom="15dp">
+    <rotate>
+
+        <bitmap
+        android:src="@drawable/logo_back"
+        android:gravity="center_vertical|center_horizontal"
+        />
+
+    </rotate>
+
+</item>
+</layer-list>
+

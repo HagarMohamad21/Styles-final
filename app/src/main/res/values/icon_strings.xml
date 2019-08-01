@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="infoIcon" translatable="false">&#xe900;</string>
+    <string name="searchIcon" translatable="false">&#xe901;</string>
+    <string name="personIcon" translatable="false">&#xe907;</string>
+    <string name="menuIcon" translatable="false">&#xe906;</string>
+    <string name="phoneIcon" translatable="false">&#xe908;</string>
+    <string name="passwordIcon" translatable="false">&#xe909;</string>
+    <string name="closeIcon" translatable="false">&#xe90f;</string>
+    <string name="calendarIcon" translatable="false">&#xe910;</string>
+    <string name="homeIcon" translatable="false">&#xe911;</string>
+    <string name="ordersIcon" translatable="false">&#xe913;</string>
+    <string name="messagesIcon" translatable="false">&#xe914;</string>
+    <string name="editIcon" translatable="false">&#xe915;</string>
+    <string name="logoImage" translatable="false">&#xe916;</string>
+    <string name="logoIcon" translatable="false">&#xe917;</string>
+    <string name="facebookIcon" translatable="false">&#xea90;</string>
+    <string name="removeIcon" translatable="false">&#xea0b;</string>
+    <string name="ratingIcon" translatable="false">&#xe9d9;</string>
+    <string name="galleryIcon" translatable="false">&#xe90d;</string>
+    <string name="clockIcon" translatable="false">&#xe90b;</string>
+    <string name="locationIcon" translatable="false">&#xe947;</string>
+    <string name="addIcon" translatable="false">&#xea0a;</string>
+    <string name="cameraIcon" translatable="false">&#xe912;</string>
+    <string name="emailIcon" translatable="false">&#xe90a;</string>
+    <string name="padIcon" translatable="false">&#xe902;</string>
+    <string name="creditIcon" translatable="false">&#xe93f;</string>
+    <string name="sendIcon" translatable="false">&#xe904;</string>
+    <string name="updateIcon" translatable="false">&#xea2e;</string>
+    <string name="dropdownIcon" translatable="false">&#xe919;</string>
+    <string name="dollarIcon" translatable="false">&#xe90e;</string>
+    <string name="errorIcon" translatable="false">&#xe918;</string>
+    <string name="termsIcon" translatable="false" >&#xe9bb;</string>
+</resources>
