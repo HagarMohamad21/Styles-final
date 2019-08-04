@@ -3,6 +3,7 @@ package styles.zonetech.net.styles.Helpers;
 import android.content.Context;
 import android.content.SharedPreferences;
 import android.content.res.Resources;
+import android.util.Log;
 
 
 import com.google.gson.Gson;
@@ -176,7 +177,6 @@ public boolean MessageSent=false;
                order.setOrderItems(orderJson.getString("items"));
 
                orders.add(order);
-
             } catch (JSONException e) {
                 e.printStackTrace();
             }
@@ -185,14 +185,15 @@ public boolean MessageSent=false;
 
     private void getTerms(JSONObject termsJson){
         try {
-            terms.setTermArabicName(termsJson.getString("arname"));
-            terms.setTermEnglishName(termsJson.getString("enname"));
+            terms.setTermArabicName(termsJson.getString("ardescription"));
+            terms.setTermEnglishName(termsJson.getString("endescription"));
 
 
         } catch (JSONException e) {
             e.printStackTrace();
         }
     }
+
     private void getReviews(JSONArray modelArray) {
         for (int i=0;i<modelArray.length();i++){
             Models review=new Models();

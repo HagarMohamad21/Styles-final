@@ -1,10 +1,6 @@
 package styles.zonetech.net.styles.Server;
 
-import java.io.IOException;
 
-import okhttp3.Callback;
-import okhttp3.OkHttpClient;
-import okhttp3.Request;
 import retrofit2.Retrofit;
 import retrofit2.converter.scalars.ScalarsConverterFactory;
 

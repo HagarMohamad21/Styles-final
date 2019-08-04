@@ -46,7 +46,7 @@ public class BillActivity extends AppCompatActivity {
     FrameLayout loaderLayout;
     IServer server;
 
-    String  constructedOrder="",orderScheduleFormat,coupon;
+    String  constructedOrder="",orderScheduleFormat,coupon="";
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -302,6 +302,7 @@ loader.load();
                     @Override
                     public void onResponse(Call<String> call, Response<String> response) {
                         loader.stop();
+
                         validator.ShowToast(getString(R.string.order_placed));
                         mStartActivity(mContext,new OrdersActivity());
                     }

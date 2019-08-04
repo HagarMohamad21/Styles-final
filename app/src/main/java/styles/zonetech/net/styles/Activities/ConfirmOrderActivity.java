@@ -40,6 +40,7 @@ public class ConfirmOrderActivity extends AppCompatActivity  {
     private boolean inShop=true;
 Button continueBtn;
 Context mContext=ConfirmOrderActivity.this;
+
 RecyclerView orderDetailsList;
     private static int givenLayoutType;
     Button inHomeBtn,inShopBtn;
@@ -479,7 +480,6 @@ int i=0;
         }
 
        constructedOrder=orders.toString();
-
     }
 
 

@@ -484,10 +484,6 @@ if(list!=null){
                this.dialogDismissListener = dialogDismissListener;
     }
 
-
-
-
-
     public void setOnDismissListener() {
 
         if(givenLayoutType==Common.DIALOG_LAYOUT_TYPE_CITY){

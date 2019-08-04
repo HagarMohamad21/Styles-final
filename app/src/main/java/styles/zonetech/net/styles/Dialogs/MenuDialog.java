@@ -140,19 +140,7 @@ ArrayList<Models>list=new ArrayList<>();
                        }
                    });
 
-//                   dialog.setOnCancelBtnClicked(new onCancelBtnClicked() {
-//                       @Override
-//                       public void onCancelBtnClicked() {
-//                           dismiss();
-//                       }
-//                   });
-//
-//                   dialog.setOnCloseBtnClicked(new onCloseBtnClicked() {
-//                       @Override
-//                       public void onCloseBtnClicked() {
-//                           dismiss();
-//                       }
-//                   });
+
                    dialog.show();
                }
                break;

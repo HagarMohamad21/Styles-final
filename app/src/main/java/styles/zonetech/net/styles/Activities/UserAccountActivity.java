@@ -387,7 +387,7 @@ else{
 
 
 
-    private void editAccount(final String userName, final String useremail, final String userphone, String password) {
+    private void editAccount(final String userName, final String useremail, final String userphone, final String password) {
 
         videoLoader.load();
         final String CurrentId= String.valueOf(Common.currentUser.getUserId());
@@ -396,14 +396,14 @@ else{
             public void onResponse(Call<String> call, Response<String> response) {
                 videoLoader.stop();
                 if(response.body()!=null){
-                    Common.currentUser=new Models();
-                    Common.currentUser.setUserId(Integer.parseInt(CurrentId));
-                    Common.currentUser.setUserEmail(useremail);
-                    Common.currentUser.setUserPhone(userphone);
-                    Common.currentUser.setUserName(userName);
-
                     parser.parse(response.body());
                     if(parser.getStatus().equals("success")){
+                        Common.currentUser=new Models();
+                        Common.currentUser.setUserId(Integer.parseInt(CurrentId));
+                        Common.currentUser.setUserEmail(useremail);
+                        Common.currentUser.setUserPhone(userphone);
+                        Common.currentUser.setUserName(userName);
+                        Common.currentUser.setUserPassword(password);
                         validator.ShowToast(getString(R.string.updateAccoutText));
                     }
                     else if(parser.getStatus().equals("error")){
@@ -420,14 +420,14 @@ else{
 
     }
 
-    private void editAccountWithImage(final String userName, final String useremail, final String userphone, String password) {
+    private void editAccountWithImage(final String userName, final String useremail, final String userphone, final String password) {
         videoLoader.load();
         final String CurrentId= String.valueOf(Common.currentUser.getUserId());
         if(SELECTED_IMAGE_Uri!=null){
             String path=getPath(SELECTED_IMAGE_Uri);
             file=new File(path); }
         MultipartBody.Part filePart = MultipartBody.Part.createFormData("userimage", file.getName(), RequestBody.create(MediaType.parse("image/*"), file));
-        RequestBody userIdRequest=RequestBody.create(MediaType.parse("text/plain"),CurrentId);
+        final RequestBody userIdRequest=RequestBody.create(MediaType.parse("text/plain"),CurrentId);
         RequestBody userNameRequest = RequestBody.create(MediaType.parse("text/plain"), userName);
         RequestBody userEmailRequst = RequestBody.create(MediaType.parse("text/plain"), useremail);
         RequestBody userPhoneRequest = RequestBody.create(MediaType.parse("text/plain"), userphone);
@@ -439,14 +439,17 @@ else{
             public void onResponse(Call<String> call, Response<String> response) {
                 videoLoader.stop();
                 if(response.body()!=null){
-                    Common.currentUser=new Models();
-                    Common.currentUser.setUserId(Integer.parseInt(CurrentId));
-                    Common.currentUser.setUserEmail(useremail);
-                    Common.currentUser.setUserPhone(userphone);
-                    Common.currentUser.setUserName(userName);
-
                     parser.parse(response.body());
                     if(parser.getStatus().equals("success")){
+                        Common.currentUser=new Models();
+                        Common.currentUser.setUserId(Integer.parseInt(CurrentId));
+                        Common.currentUser.setUserEmail(useremail);
+                        Common.currentUser.setUserPhone(userphone);
+                        Common.currentUser.setUserName(userName);
+                        Common.currentUser.setUserPassword(password);
+                        Common.currentUser.setUserProfileImage(Common.userImageUrl+Common.currentUser.getUserId()+".jpg");
+
+                        getImage();
                         validator.ShowToast(getString(R.string.updateAccoutText));
 
                     }
