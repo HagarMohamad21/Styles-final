@@ -43,7 +43,6 @@
         android:background="@drawable/edit_text_back"
         android:ems="10"
         android:hint="@string/coupon"
-        android:inputType="phone"
         android:paddingStart="@dimen/editTextStartPadding"
         android:paddingEnd="@dimen/editTextEndPadding"
         android:tag="regularFont"
@@ -74,6 +73,7 @@
         android:layout_width="wrap_content"
         android:layout_height="@dimen/viewsHeight"
         android:tag="regularFont"
+        android:textSize="@dimen/textSize"
         android:textColor="@color/black"
         android:backgroundTint="@color/colorAccent"
         android:buttonTint="@color/colorAccent"
@@ -190,7 +190,7 @@
         android:tag="bold"
         android:text="@string/total"
         android:textColor="@color/black"
-        android:textSize="@dimen/textSize"
+        android:textSize="20sp"
         app:layout_constraintStart_toStartOf="@+id/guidelineLeft"
         app:layout_constraintTop_toTopOf="@+id/guideline2" />
 
@@ -200,9 +200,8 @@
         android:layout_height="wrap_content"
         android:gravity="center"
         android:tag="bold"
-        android:text="190EGP"
         android:textColor="@color/green"
-        android:textSize="@dimen/textSize"
+        android:textSize="20sp"
         app:layout_constraintEnd_toStartOf="@+id/guidelineRight"
         app:layout_constraintTop_toTopOf="@+id/guideline2" />
 
@@ -226,11 +225,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="@dimen/iconStartMargin"
-        android:layout_marginTop="8dp"
-        android:layout_marginBottom="8dp"
         android:padding="@dimen/iconTextPadding"
         android:tag="icon"
-        android:text="@string/creditIcon"
+        android:text="@string/couponIcon"
         android:textColor="@color/colorAccent"
         android:textSize="@dimen/iconTextSize"
         app:layout_constraintBottom_toTopOf="@+id/cashRadioBtn"

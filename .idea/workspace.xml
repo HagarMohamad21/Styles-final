@@ -97,40 +97,24 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/styles/zonetech/net/styles/Activities/BillActivity.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="78">
-              <caret line="288" selection-start-line="288" selection-end-line="288" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/styles/zonetech/net/styles/Activities/ConfirmOrderActivity.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="322">
-              <caret line="481" column="42" selection-start-line="481" selection-start-column="42" selection-end-line="481" selection-end-column="42" />
-              <folding>
-                <element signature="method#setListeners#0;class#ConfirmOrderActivity#0" />
-                <element signature="method#setupBundle#0;class#ConfirmOrderActivity#0" />
-                <element signature="method#initViews#0;class#ConfirmOrderActivity#0" />
-                <element signature="method#mStartActivity#0;class#ConfirmOrderActivity#0" />
-                <element signature="method#setupRecyclerView#0;class#ConfirmOrderActivity#0" />
-                <element signature="method#onBackPressed#0;class#ConfirmOrderActivity#0" />
-              </folding>
+        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_home.xml">
+          <provider selected="true" editor-type-id="android-designer2" />
+          <provider editor-type-id="text-editor">
+            <state relative-caret-position="510">
+              <caret line="30" column="42" lean-forward="true" selection-start-line="30" selection-start-column="42" selection-end-line="30" selection-end-column="42" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/styles/zonetech/net/styles/Utils/Common.java">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/styles/zonetech/net/styles/Activities/HomeActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="186">
-              <caret line="19" column="24" selection-start-line="19" selection-start-column="24" selection-end-line="19" selection-end-column="24" />
+            <state relative-caret-position="289">
+              <caret line="48" column="32" lean-forward="true" selection-start-line="48" selection-start-column="32" selection-end-line="48" selection-end-column="32" />
               <folding>
-                <element signature="e#2269#2270#0" expanded="true" />
-                <element signature="e#2342#2343#0" expanded="true" />
+                <element signature="method#initViews#0;class#HomeActivity#0" />
+                <element signature="method#setListeners#0;class#HomeActivity#0" />
               </folding>
             </state>
           </provider>
@@ -141,12 +125,12 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Kotlin File" />
+        <option value="Interface" />
         <option value="valueResourceFile" />
         <option value="layoutResourceFile" />
-        <option value="Kotlin File" />
-        <option value="Class" />
-        <option value="Interface" />
         <option value="resourceFile" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -160,6 +144,11 @@
       <find>ختر</find>
       <find>”</find>
       <find>“</find>
+      <find>conn</find>
+      <find>save</find>
+      <find>switch_to_arabic</find>
+      <find>sw</find>
+      <find>Map</find>
     </findStrings>
     <replaceStrings>
       <replace>&lt;/string&gt;</replace>
@@ -179,63 +168,63 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/shops_list_item.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/java/styles/zonetech/net/styles/Utils/Common.java" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/order_list_item.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/java/styles/zonetech/net/styles/Models/Models.java" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/sent_message_list_item.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/java/styles/zonetech/net/styles/Activities/AboutActivity.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/styles/zonetech/net/styles/Server/IServer.java" />
-        <option value="$PROJECT_DIR$/app/src/main/res/values/strings.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/res/values-ar/strings.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/java/styles/zonetech/net/styles/Activities/ForgotPasswordActivity.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/styles/zonetech/net/styles/Activities/FullscreenGallery.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/styles/zonetech/net/styles/Activities/GalleryActivity.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/styles/zonetech/net/styles/Activities/HairDresserActivity.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/styles/zonetech/net/styles/Activities/HairDressersActivity.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/styles/zonetech/net/styles/Activities/LoginActivity.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/styles/zonetech/net/styles/Activities/MapsActivity.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/styles/zonetech/net/styles/Activities/MessagesActivity.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/styles/zonetech/net/styles/Activities/OrdersActivity.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/styles/zonetech/net/styles/Activities/RatingActivity.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/styles/zonetech/net/styles/Activities/SignupActivity.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/styles/zonetech/net/styles/Activities/SplashActivity.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/styles/zonetech/net/styles/Activities/TermsActivity.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/styles/zonetech/net/styles/Adapters/DialogAdapter.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/styles/zonetech/net/styles/Adapters/GalleryAdapter.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/styles/zonetech/net/styles/Adapters/OrderDetailsAdapter.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/styles/zonetech/net/styles/Adapters/OrdersAdapter.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/styles/zonetech/net/styles/Adapters/ShopsAdapter.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/styles/zonetech/net/styles/FireBase/FireBaseInstanceIDService.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/styles/zonetech/net/styles/FireBase/FireBaseMessagingService.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/styles/zonetech/net/styles/Helpers/DatePicker.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/styles/zonetech/net/styles/Helpers/EditTextValidator.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/styles/zonetech/net/styles/Helpers/EmptyListInitiator.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/styles/zonetech/net/styles/Helpers/ImagesHelper.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/styles/zonetech/net/styles/Helpers/VideoLoader.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/styles/zonetech/net/styles/Server/ImageDownloader.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/styles/zonetech/net/styles/Utils/CommonMethods.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/styles/zonetech/net/styles/Utils/MutedVideoView.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/styles/zonetech/net/styles/Utils/RatingConfiguration.java" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/dialog_list_item.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/styles/zonetech/net/styles/ViewHolders/DialogViewHolder.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/styles/zonetech/net/styles/ViewHolders/OrderDetailViewHolder.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/styles/zonetech/net/styles/Helpers/EditTextValidator.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/styles/zonetech/net/styles/ViewHolders/ShopViewHolder.java" />
-        <option value="$PROJECT_DIR$/app/build.gradle" />
-        <option value="$PROJECT_DIR$/app/src/main/java/styles/zonetech/net/styles/Server/Client.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/styles/zonetech/net/styles/Dialogs/MenuDialog.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/styles/zonetech/net/styles/Dialogs/ListsDialog.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/styles/zonetech/net/styles/Listeners/AddDialogDismisserListener.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/styles/zonetech/net/styles/Activities/UserAccountActivity.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/styles/zonetech/net/styles/Helpers/Parser.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/styles/zonetech/net/styles/Activities/BillActivity.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/styles/zonetech/net/styles/ViewHolders/RatingViewHolder.java" />
+        <option value="$PROJECT_DIR$/app/src/main/res/values-ar/styles.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/values/styles.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/styles/zonetech/net/styles/Adapters/RoundedCornersTransformation.java" />
+        <option value="$PROJECT_DIR$/app/google-services.json" />
+        <option value="$PROJECT_DIR$/app/src/main/java/styles/zonetech/net/styles/Activities/OrdersActivity.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/styles/zonetech/net/styles/Activities/MessagesActivity.java" />
+        <option value="$PROJECT_DIR$/app/src/debug/res/values/google_maps_api.xml" />
+        <option value="$PROJECT_DIR$/app/src/release/res/values/google_maps_api_release.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/styles/zonetech/net/styles/CustomApplication.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/styles/zonetech/net/styles/Helpers/NotificationHelper.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/styles/zonetech/net/styles/FireBase/FireBaseMessagingService.java" />
+        <option value="$PROJECT_DIR$/app/src/main/res/values/strings.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/styles/zonetech/net/styles/Server/IServer.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/styles/zonetech/net/styles/Activities/HairDressersActivity.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/styles/zonetech/net/styles/Activities/AboutActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/styles/zonetech/net/styles/Activities/ConfirmOrderActivity.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/styles/zonetech/net/styles/Models/Models.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/styles/zonetech/net/styles/Helpers/Parser.java" />
+        <option value="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/styles/zonetech/net/styles/HomeActivity.java" />
+        <option value="$PROJECT_DIR$/app/src/main/res/values/icon_strings.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_bill.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/styles/zonetech/net/styles/Activities/SplashActivity.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/styles/zonetech/net/styles/Adapters/GalleryAdapter.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/styles/zonetech/net/styles/Adapters/ShopsAdapter.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/styles/zonetech/net/styles/Activities/HairDresserActivity.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/styles/zonetech/net/styles/Activities/FullscreenGallery.java" />
+        <option value="$PROJECT_DIR$/build.gradle" />
+        <option value="$PROJECT_DIR$/app/src/main/res/drawable/bg_overlay.xml" />
+        <option value="$PROJECT_DIR$/app/build.gradle" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/snippet_toolbar.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/drawable/linear_layout_top_corners.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/image_slider_layout_item.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/styles/zonetech/net/styles/Listeners/OnSwipeItemClicked.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/styles/zonetech/net/styles/Adapters/SliderAdapter.java" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/search_bar.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_maps.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/styles/zonetech/net/styles/Utils/RoundedDrawable.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/styles/zonetech/net/styles/Activities/MapsActivity.java" />
+        <option value="$PROJECT_DIR$/app/src/main/res/values-ar/strings.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/styles/zonetech/net/styles/Activities/LoginActivity.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/styles/zonetech/net/styles/Dialogs/MenuDialog.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/styles/zonetech/net/styles/Activities/SignupActivity.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/styles/zonetech/net/styles/Dialogs/ListsDialog.java" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_home.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/styles/zonetech/net/styles/Activities/HomeActivity.java" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-7" />
-    <option name="width" value="618" />
+    <option name="width" value="845" />
     <option name="height" value="735" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -246,9 +235,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="AndroidView" />
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -256,55 +242,28 @@
               <item name="Styles" type="b2602c69:ProjectViewProjectNode" />
               <item name="Styles" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
             </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="AndroidView">
+        <subPane>
+          <expand>
             <path>
-              <item name="Styles" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Styles" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="app" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="Styles" type="1abcf292:AndroidViewProjectNode" />
+              <item name="app" type="feadf853:AndroidModuleNode" />
             </path>
             <path>
-              <item name="Styles" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Styles" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="app" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Styles" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Styles" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="app" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Styles" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Styles" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="app" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Styles" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Styles" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="app" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="styles" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Styles" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Styles" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="app" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="styles" type="462c0819:PsiDirectoryNode" />
-              <item name="FireBase" type="462c0819:PsiDirectoryNode" />
+              <item name="Styles" type="1abcf292:AndroidViewProjectNode" />
+              <item name="app" type="feadf853:AndroidModuleNode" />
+              <item name="manifests" type="f94875db:AndroidManifestsGroupNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -312,14 +271,15 @@
     <property name="ExportApk.BuildVariants" value="debug" />
     <property name="ExportApk.SignV1" value="true" />
     <property name="ExportApk.SignV2" value="true" />
+    <property name="ToolWindowBuild.ShowToolbar" value="false" />
     <property name="android.sdk.path" value="$USER_HOME$/AppData/Local/Android/Sdk" />
-    <property name="device.picker.selection" value="197dce2e9804" />
-    <property name="last_directory_selection" value="$PROJECT_DIR$/app/src/main/res/drawable" />
+    <property name="device.picker.selection" value="Nexus_S_API_23" />
+    <property name="last_directory_selection" value="$PROJECT_DIR$/app/src/main/res/values" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/app/debug/debug/app-debug.apk" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.17" />
     <property name="project.structure.side.proportion" value="0.0" />
-    <property name="settings.editor.selected.configurable" value="diff.base" />
+    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
     <property name="sync.plugin.last.upgrade.timestamp" value="1560247184114" />
   </component>
   <component name="RecentsManager">
@@ -327,15 +287,15 @@
       <recent name="styles.zonetech.net.styles.Adapters" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\hagar\Desktop\Styles(Added permission for reigster image)\Styles\app\src\main\res\drawable-v24" />
-      <recent name="C:\Users\hagar\Desktop\Styles(Added permission for reigster image)\Styles\app\src\main\res\drawable" />
-      <recent name="C:\Users\hagar\Desktop\Styles(Added permission for reigster image)\Styles\app\src\main\res\drawable-ar" />
-      <recent name="C:\Users\hagar\Desktop\Styles(Added permission for reigster image)\Styles\app\src\main\res\drawable-hdpi" />
-      <recent name="C:\Users\hagar\Desktop\Styles(Added permission for reigster image)\Styles\app\src\main\res\drawable-mdpi" />
+      <recent name="C:\Users\hagar\Desktop\Styles(Added permission for reigster image)\Styles\app\src\main\assets\fonts" />
+      <recent name="C:\Users\hagar\Desktop\Styles(Added permission for reigster image)\Styles\app\src\main\res\values" />
+      <recent name="C:\Users\hagar\Desktop\Styles(Added permission for reigster image)\Styles\app\src\main\res\mipmap-xxxhdpi" />
+      <recent name="C:\Users\hagar\Desktop\Styles(Added permission for reigster image)\Styles\app\src\main\res\mipmap-xxhdpi" />
+      <recent name="C:\Users\hagar\Desktop\Styles(Added permission for reigster image)\Styles\app\src\main\res\mipmap-xhdpi" />
     </key>
     <key name="android.template.packageName">
-      <recent name="styles.zonetech.net.styles.Activities" />
       <recent name="styles.zonetech.net.styles" />
+      <recent name="styles.zonetech.net.styles.Activities" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\hagar\Desktop\Styles(Added permission for reigster image)\Styles\app\src\main\res\drawable-xxxhdpi" />
@@ -353,6 +313,11 @@
       <recent name="styles.zonetech.net.styles.Adapters" />
       <recent name="styles.zonetech.net.styles.Listeners" />
     </key>
+  </component>
+  <component name="RunAnythingCache">
+    <option name="myCommands">
+      <command value="?" />
+    </option>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -460,65 +425,66 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info id="Captures" order="0" sideWeight="0.502455" side_tool="true" weight="0.12405446" />
+      <window_info id="Captures" order="0" sideWeight="0.5057283" side_tool="true" weight="0.21709532" />
       <window_info id="Structure" order="1" sideWeight="0.5008183" side_tool="true" weight="0.34039333" />
-      <window_info id="Favorites" order="2" side_tool="true" weight="0.32967034" />
+      <window_info id="Favorites" order="2" sideWeight="0.5040917" side_tool="true" weight="0.25113463" />
       <window_info id="Build Variants" order="3" side_tool="true" />
       <window_info id="Image Layers" order="4" />
       <window_info id="Designer" order="5" />
       <window_info id="Capture Tool" order="6" />
-      <window_info content_ui="combo" id="Project" order="7" sideWeight="0.497545" weight="0.63736266" />
-      <window_info anchor="bottom" id="Run" order="0" sideWeight="0.49816626" weight="0.7250409" />
-      <window_info anchor="bottom" id="Logcat" order="1" weight="0.58428806" />
-      <window_info anchor="bottom" id="TODO" order="2" weight="0.4844517" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.32922733" />
-      <window_info anchor="bottom" id="Terminal" order="4" weight="0.95090014" />
-      <window_info anchor="bottom" id="Version Control" order="5" weight="0.88870704" />
-      <window_info anchor="bottom" id="Build" order="6" sideWeight="0.49924356" weight="0.46972176" />
-      <window_info anchor="bottom" id="Find" order="7" weight="0.6579378" />
-      <window_info anchor="bottom" id="Android Profiler" order="8" weight="0.95090014" />
-      <window_info anchor="bottom" id="Messages" order="9" weight="0.32922733" />
-      <window_info anchor="bottom" id="Resources Explorer" order="10" sideWeight="0.50075644" side_tool="true" weight="0.95090014" />
-      <window_info anchor="right" id="Event Log" order="0" sideWeight="0.5008183" side_tool="true" visible="true" weight="0.09001513" />
+      <window_info content_ui="combo" id="Project" order="7" sideWeight="0.49590835" weight="0.24659607" />
+      <window_info anchor="bottom" id="Logcat" order="0" weight="0.95090014" />
+      <window_info anchor="bottom" id="TODO" order="1" weight="0.4844517" />
+      <window_info anchor="bottom" id="Debug" order="2" weight="0.32922733" />
+      <window_info anchor="bottom" id="Terminal" order="3" weight="0.95090014" />
+      <window_info anchor="bottom" id="Version Control" order="4" weight="0.88870704" />
+      <window_info anchor="bottom" id="Build" order="5" sideWeight="0.49924356" weight="0.39770868" />
+      <window_info anchor="bottom" id="Find" order="6" weight="0.6579378" />
+      <window_info anchor="bottom" id="Android Profiler" order="7" show_stripe_button="false" weight="0.95090014" />
+      <window_info anchor="bottom" id="Messages" order="8" weight="0.32922733" />
+      <window_info anchor="bottom" id="Resources Explorer" order="9" sideWeight="0.50226927" side_tool="true" weight="0.7692308" />
+      <window_info anchor="bottom" id="Run" order="10" sideWeight="0.4977307" weight="0.36497545" />
+      <window_info anchor="right" id="Event Log" order="0" sideWeight="0.5008183" side_tool="true" weight="0.08698941" />
       <window_info anchor="right" id="Capture Analysis" order="1" />
       <window_info anchor="right" id="Gradle" order="2" sideWeight="0.49918166" weight="0.3290469" />
       <window_info anchor="right" id="Theme Preview" order="3" />
       <window_info anchor="right" id="Palette&#9;" order="4" />
-      <window_info anchor="right" id="Preview" order="5" sideWeight="0.497545" weight="0.4591528" />
+      <window_info anchor="right" id="Preview" order="5" sideWeight="0.497545" weight="0.34568834" />
       <window_info anchor="right" id="StringPreview" order="6" />
-      <window_info anchor="right" id="Device File Explorer" order="7" side_tool="true" weight="0.3290469" />
-      <window_info anchor="right" id="Assistant" order="8" weight="0.49924356" />
+      <window_info anchor="right" id="Assistant" order="7" weight="0.49924356" />
+      <window_info anchor="right" id="Device File Explorer" order="8" weight="0.32753405" />
     </layout>
     <layout-to-restore>
-      <window_info id="Captures" order="0" sideWeight="0.502455" side_tool="true" weight="0.12405446" />
+      <window_info id="Captures" order="0" sideWeight="0.5057283" side_tool="true" weight="0.21709532" />
       <window_info id="Structure" order="1" sideWeight="0.5008183" side_tool="true" weight="0.34039333" />
-      <window_info id="Favorites" order="2" side_tool="true" weight="0.32967034" />
+      <window_info id="Favorites" order="2" sideWeight="0.5040917" side_tool="true" weight="0.25113463" />
       <window_info id="Build Variants" order="3" side_tool="true" />
       <window_info id="Image Layers" order="4" />
       <window_info id="Designer" order="5" />
       <window_info id="Capture Tool" order="6" />
-      <window_info content_ui="combo" id="Project" order="7" sideWeight="0.497545" visible="true" weight="0.31694403" />
-      <window_info anchor="bottom" id="Run" order="0" sideWeight="0.49816626" weight="0.6792144" />
-      <window_info anchor="bottom" id="Logcat" order="1" weight="0.86415714" />
-      <window_info anchor="bottom" id="TODO" order="2" weight="0.4844517" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.32922733" />
-      <window_info anchor="bottom" id="Terminal" order="4" weight="0.95090014" />
-      <window_info anchor="bottom" id="Version Control" order="5" weight="0.88870704" />
-      <window_info anchor="bottom" id="Build" order="6" sideWeight="0.49924356" visible="true" weight="0.95090014" />
-      <window_info anchor="bottom" id="Find" order="7" weight="0.6579378" />
-      <window_info anchor="bottom" id="Android Profiler" order="8" weight="0.95090014" />
-      <window_info anchor="bottom" id="Messages" order="9" weight="0.32922733" />
-      <window_info active="true" anchor="bottom" id="Resources Explorer" order="10" sideWeight="0.50075644" side_tool="true" weight="0.95090014" />
-      <window_info anchor="right" id="Event Log" order="0" sideWeight="0.5008183" side_tool="true" weight="0.09001513" />
+      <window_info content_ui="combo" id="Project" order="7" sideWeight="0.49590835" visible="true" weight="0.24659607" />
+      <window_info anchor="bottom" id="Logcat" order="0" weight="0.95090014" />
+      <window_info anchor="bottom" id="TODO" order="1" weight="0.4844517" />
+      <window_info anchor="bottom" id="Debug" order="2" weight="0.32922733" />
+      <window_info anchor="bottom" id="Terminal" order="3" weight="0.95090014" />
+      <window_info anchor="bottom" id="Version Control" order="4" weight="0.88870704" />
+      <window_info anchor="bottom" id="Build" order="5" sideWeight="0.49924356" weight="0.39770868" />
+      <window_info anchor="bottom" id="Find" order="6" weight="0.6579378" />
+      <window_info anchor="bottom" id="Android Profiler" order="7" weight="0.95090014" />
+      <window_info anchor="bottom" id="Messages" order="8" weight="0.32922733" />
+      <window_info anchor="bottom" id="Resources Explorer" order="9" sideWeight="0.50226927" side_tool="true" weight="0.7692308" />
+      <window_info anchor="bottom" id="Run" order="10" sideWeight="0.4977307" weight="0.36497545" />
+      <window_info anchor="right" id="Event Log" order="0" sideWeight="0.5008183" side_tool="true" weight="0.08698941" />
       <window_info anchor="right" id="Capture Analysis" order="1" />
       <window_info anchor="right" id="Gradle" order="2" sideWeight="0.49918166" weight="0.3290469" />
       <window_info anchor="right" id="Theme Preview" order="3" />
       <window_info anchor="right" id="Palette&#9;" order="4" />
-      <window_info anchor="right" id="Preview" order="5" sideWeight="0.497545" weight="0.4591528" />
+      <window_info anchor="right" id="Preview" order="5" sideWeight="0.497545" weight="0.34568834" />
       <window_info anchor="right" id="StringPreview" order="6" />
-      <window_info anchor="right" id="Assistant" order="7" weight="0.3294621" />
-      <window_info anchor="right" id="Device File Explorer" order="8" side_tool="true" weight="0.3290469" />
+      <window_info anchor="right" id="Assistant" order="7" weight="0.49924356" />
+      <window_info anchor="right" id="Device File Explorer" order="8" weight="0.32753405" />
     </layout-to-restore>
   </component>
   <component name="VcsManagerConfiguration">
@@ -527,367 +493,31 @@
     <option name="LAST_COMMIT_MESSAGE" value="reduced height of recycler view" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/styles/zonetech/net/styles/Utils/CommonMethods.java">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/styles/zonetech/net/styles/Helpers/Parser.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="30" column="4" selection-start-line="30" selection-start-column="4" selection-end-line="30" selection-end-column="4" />
+        <state relative-caret-position="5270">
+          <caret line="344" column="13" selection-start-line="344" selection-start-column="13" selection-end-line="344" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/styles/zonetech/net/styles/Utils/ItemDecoration.java">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/styles/zonetech/net/styles/Listeners/onPersonTotalComputed.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
+        <state relative-caret-position="51">
+          <caret line="3" column="20" selection-start-line="3" selection-start-column="20" selection-end-line="3" selection-end-column="20" />
         </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/styles/zonetech/net/styles/Utils/MutedVideoView.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="6494">
-          <caret line="413" selection-start-line="413" selection-end-line="413" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
-      <provider editor-type-id="android-manifest" />
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/styles/zonetech/net/styles/Server/ImageDownloader.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-192">
-          <caret line="1" selection-start-line="1" selection-end-line="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/styles/zonetech/net/styles/Utils/RoundedView.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="50">
-          <caret line="70" lean-forward="true" selection-start-line="70" selection-end-line="70" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/styles/zonetech/net/styles/Utils/RoundedDrawable.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/styles/zonetech/net/styles/Utils/RatingConfiguration.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="373">
-          <caret line="51" selection-start-line="51" selection-end-line="51" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/styles/zonetech/net/styles/Helpers/DatePicker.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="362">
-          <caret line="92" column="52" selection-start-line="92" selection-start-column="52" selection-end-line="92" selection-end-column="52" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/styles/zonetech/net/styles/Helpers/EditTextValidator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="67" selection-start-line="67" selection-end-line="67" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/styles/zonetech/net/styles/Helpers/EmptyListInitiator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="28" selection-start-line="28" selection-end-line="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/styles/zonetech/net/styles/Helpers/ImagesHelper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="78" selection-start-line="78" selection-end-line="78" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/styles/zonetech/net/styles/Helpers/NetworkValidator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="7" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/styles/zonetech/net/styles/Helpers/TextPatternFormatter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/styles/zonetech/net/styles/Helpers/VideoLoader.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/styles/zonetech/net/styles/ViewHolders/SentMessageViewHolder.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/styles/zonetech/net/styles/ViewHolders/ReceivedMessageViewHolder.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/styles/zonetech/net/styles/ViewHolders/RatingViewHolder.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/styles/zonetech/net/styles/ViewHolders/OrderDetailViewHolder.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="348">
-          <caret line="200" selection-start-line="200" selection-end-line="200" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/styles/zonetech/net/styles/ViewHolders/DialogViewHolder.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2278">
-          <caret line="164" selection-start-line="164" selection-end-line="164" />
-          <folding>
-            <element signature="e#3223#3801#0" expanded="true" />
-            <element signature="e#3800#3801#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/anim/slide_down.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/anim/slide_up.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/anim/splash_anim.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/debug/res/values/google_maps_api.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/values/dimens.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/values/colors.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/values/icon_strings.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-22" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/styles/zonetech/net/styles/Server/Client.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" selection-start-line="2" selection-end-line="2" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/styles/zonetech/net/styles/Helpers/Fonts.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="43" column="38" selection-start-line="43" selection-start-column="38" selection-end-line="43" selection-end-column="38" />
-          <folding>
-            <element signature="method#Fonts#0;class#Fonts#0" />
-            <element signature="method#setTypeFce#0;class#Fonts#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/styles/zonetech/net/styles/FireBase/FireBaseInstanceIDService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="14" selection-start-line="14" selection-end-line="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/styles/zonetech/net/styles/FireBase/FireBaseMessagingService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="169">
-          <caret line="27" lean-forward="true" selection-start-line="27" selection-end-line="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/styles/zonetech/net/styles/Dialogs/ListsDialog.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="97">
-          <caret line="109" column="26" selection-start-line="109" selection-start-column="26" selection-end-line="109" selection-end-column="26" />
-          <folding>
-            <element signature="e#4254#4974#0" />
-            <element signature="e#4983#5153#0" />
-            <element signature="e#5160#5690#0" />
-            <element signature="e#5696#14952#0" />
-            <element signature="e#14958#15103#0" />
-            <element signature="e#15109#16244#0" />
-            <element signature="e#16251#17521#0" />
-            <element signature="e#17529#17644#0" />
-            <element signature="e#17653#17809#0" />
-            <element signature="e#17819#18568#0" />
-            <element signature="e#18750#19333#0" />
-            <element signature="e#19344#19922#0" />
-            <element signature="e#19929#20100#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/styles/zonetech/net/styles/Dialogs/MenuDialog.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-807">
-          <caret line="177" selection-start-line="177" selection-end-line="177" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/styles/zonetech/net/styles/Adapters/RoundedCornersTransformation.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-3061">
-          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/styles/zonetech/net/styles/Listeners/AddBtnClickListener.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/styles/zonetech/net/styles/Listeners/ChainedCallbackForHairdresserTotal.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="17" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/styles/zonetech/net/styles/Listeners/RemoveItemsCallback.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/styles/zonetech/net/styles/Listeners/SendRatingCallback.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/styles/zonetech/net/styles/Listeners/OnLoginClicked.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/build.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="474">
-          <caret line="41" column="32" selection-start-line="41" selection-start-column="32" selection-end-line="41" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/styles/zonetech/net/styles/Listeners/AddDialogDismisserListener.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" selection-start-line="5" selection-end-line="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/styles/zonetech/net/styles/Listeners/onCloseBtnClicked.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" selection-start-line="5" selection-end-line="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/styles/zonetech/net/styles/ViewHolders/ShopViewHolder.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="237">
-          <caret line="45" column="46" selection-start-line="45" selection-start-column="46" selection-end-line="45" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/styles/zonetech/net/styles/Activities/OrdersActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="305">
-          <caret line="71" column="37" selection-start-line="71" selection-start-column="37" selection-end-line="71" selection-end-column="37" />
-          <folding>
-            <element signature="e#2688#2717#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/styles/zonetech/net/styles/Server/IServer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="245">
-          <caret line="46" selection-start-line="46" selection-end-line="46" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/styles/zonetech/net/styles/Models/Models.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="595">
-          <caret line="42" selection-start-line="42" selection-end-line="42" />
-          <folding>
-            <element signature="e#6847#6848#0" expanded="true" />
-            <element signature="e#6886#6887#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/styles/zonetech/net/styles/Helpers/Parser.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="186">
-          <caret line="74" column="13" selection-start-line="74" selection-start-column="13" selection-end-line="74" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#Parser#0;class#Parser#0" />
-            <element signature="method#initErrorsArray#0;class#Parser#0" />
-            <element signature="method#getReviews#1;class#Parser#0" />
-            <element signature="method#getCodeMessage#0;class#Parser#0" />
-            <element signature="method#getUser#0;class#Parser#0" />
-            <element signature="method#getUserId#0;class#Parser#0" />
-            <element signature="method#getSaloons#1;class#Parser#0" />
-            <element signature="method#saveUser#0;class#Parser#0" />
-            <element signature="method#getMessages#1;class#Parser#0" />
-            <element signature="method#getServices#1;class#Parser#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/styles/zonetech/net/styles/Activities/UserAccountActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="441">
-          <caret line="453" column="24" selection-start-line="453" selection-start-column="24" selection-end-line="453" selection-end-column="24" />
-          <folding>
-            <element signature="method#onLoadFinished#0;class#3152:3832" />
-            <element signature="method#onLoaderReset#0;class#3152:3832" />
-            <element signature="e#5656#6733#0" />
-            <element signature="e#7868#8794#1" />
-            <element signature="e#14692#14728#0" expanded="true" />
-            <element signature="e#16939#16975#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="136">
+          <caret line="9" column="50" selection-start-line="9" selection-start-column="50" selection-end-line="9" selection-end-column="50" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/styles/zonetech/net/styles/Utils/Common.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="186">
-          <caret line="19" column="24" selection-start-line="19" selection-start-column="24" selection-end-line="19" selection-end-column="24" />
+        <state relative-caret-position="697">
+          <caret line="47" column="68" selection-start-line="47" selection-start-column="36" selection-end-line="47" selection-end-column="68" />
           <folding>
             <element signature="e#2269#2270#0" expanded="true" />
             <element signature="e#2342#2343#0" expanded="true" />
@@ -895,25 +525,398 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/styles/zonetech/net/styles/Activities/BillActivity.java">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/styles/zonetech/net/styles/Models/Models.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="78">
-          <caret line="288" selection-start-line="288" selection-end-line="288" />
+        <state relative-caret-position="289">
+          <caret line="118" column="10" selection-start-line="118" selection-start-column="10" selection-end-line="118" selection-end-column="10" />
+          <folding>
+            <element signature="e#3855#3856#0" expanded="true" />
+            <element signature="e#3889#3890#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/styles/zonetech/net/styles/Activities/ConfirmOrderActivity.java">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/styles/zonetech/net/styles/Server/IServer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="322">
-          <caret line="481" column="42" selection-start-line="481" selection-start-column="42" selection-end-line="481" selection-end-column="42" />
+        <state relative-caret-position="17">
+          <caret line="38" column="20" selection-start-line="38" selection-start-column="20" selection-end-line="38" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/values/icon_strings.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="481">
+          <caret line="33" column="70" selection-start-line="33" selection-start-column="70" selection-end-line="33" selection-end-column="70" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_bill.xml">
+      <provider editor-type-id="android-designer2" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="229" column="40" selection-start-line="229" selection-start-column="40" selection-end-line="229" selection-end-column="40" />
           <folding>
-            <element signature="method#setListeners#0;class#ConfirmOrderActivity#0" />
-            <element signature="method#setupBundle#0;class#ConfirmOrderActivity#0" />
-            <element signature="method#initViews#0;class#ConfirmOrderActivity#0" />
-            <element signature="method#mStartActivity#0;class#ConfirmOrderActivity#0" />
-            <element signature="method#setupRecyclerView#0;class#ConfirmOrderActivity#0" />
-            <element signature="method#onBackPressed#0;class#ConfirmOrderActivity#0" />
+            <element signature="e#9740#9761#0" expanded="true" />
+            <element signature="e#10183#10204#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/styles/zonetech/net/styles/Activities/SplashActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="54" column="51" selection-start-line="54" selection-start-column="37" selection-end-line="54" selection-end-column="51" />
+          <folding>
+            <element signature="method#mStartActivity#0;class#SplashActivity#0" />
+            <element signature="method#askForPermission#0;class#SplashActivity#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.daimajia.slider/library/1.1.5/5040bee95115677508106e1a42cd685bdc570369/library-1.1.5-sources.jar!/com/daimajia/slider/library/SliderTypes/BaseSliderView.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2193">
+          <caret line="209" column="74" lean-forward="true" selection-start-line="209" selection-start-column="59" selection-end-line="209" selection-end-column="74" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/styles/zonetech/net/styles/Adapters/DialogAdapter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="26" column="13" selection-start-line="26" selection-start-column="13" selection-end-line="26" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/styles/zonetech/net/styles/Adapters/GalleryAdapter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="84" selection-start-line="80" selection-start-column="24" selection-end-line="84" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/styles/zonetech/net/styles/Adapters/MessagesAdapter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/styles/zonetech/net/styles/Adapters/OrderDetailsAdapter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="19" column="13" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/styles/zonetech/net/styles/Adapters/OrdersAdapter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="36" column="13" selection-start-line="36" selection-start-column="13" selection-end-line="36" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/styles/zonetech/net/styles/Adapters/RatingAdapter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="18" column="13" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/styles/zonetech/net/styles/Adapters/RoundedCornersTransformation.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="186">
+          <caret line="38" column="28" selection-start-line="38" selection-start-column="28" selection-end-line="38" selection-end-column="28" />
+          <folding>
+            <element signature="class#CornerType#0;class#RoundedCornersTransformation#0" />
+            <element signature="method#RoundedCornersTransformation#0;class#RoundedCornersTransformation#0" />
+            <element signature="method#RoundedCornersTransformation#1;class#RoundedCornersTransformation#0" />
+            <element signature="method#drawRoundRect#0;class#RoundedCornersTransformation#0" />
+            <element signature="method#drawTopLeftRoundRect#0;class#RoundedCornersTransformation#0" />
+            <element signature="method#drawTopRightRoundRect#0;class#RoundedCornersTransformation#0" />
+            <element signature="method#drawBottomLeftRoundRect#0;class#RoundedCornersTransformation#0" />
+            <element signature="method#drawBottomRightRoundRect#0;class#RoundedCornersTransformation#0" />
+            <element signature="method#drawTopRoundRect#0;class#RoundedCornersTransformation#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" selection-start-line="3" selection-end-line="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/styles/zonetech/net/styles/Activities/FullscreenGallery.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="271">
+          <caret line="47" column="9" selection-start-line="47" selection-start-column="9" selection-end-line="47" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable/bg_overlay.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="8" selection-start-line="7" selection-start-column="8" selection-end-line="7" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/styles/zonetech/net/styles/Helpers/Fonts.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="64" column="43" selection-start-line="64" selection-start-column="32" selection-end-line="64" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/values/dimens.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="328">
+          <caret line="38" column="13" selection-start-line="38" selection-start-column="13" selection-end-line="38" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/snippet_maps_toolbar.xml">
+      <provider editor-type-id="android-designer2" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="56" column="56" lean-forward="true" selection-start-line="39" selection-start-column="7" selection-end-line="56" selection-end-column="56" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/styles/zonetech/net/styles/Activities/HairDresserActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="342">
+          <caret line="154" lean-forward="true" selection-start-line="148" selection-start-column="6" selection-end-line="161" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/styles/zonetech/net/styles/Activities/HairDressersActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="16">
+          <caret line="302" column="53" selection-start-line="302" selection-start-column="53" selection-end-line="302" selection-end-column="53" />
+          <folding>
+            <element signature="method#onCreate#0;class#HairDressersActivity#0" />
+            <element signature="method#populateShopList#0;class#HairDressersActivity#0" />
+            <element signature="method#intitOffers#0;class#HairDressersActivity#0" />
+            <element signature="method#initViews#0;class#HairDressersActivity#0" />
+            <element signature="method#setListeners#0;class#HairDressersActivity#0" />
+            <element signature="method#onBackPressed#0;class#HairDressersActivity#0" />
+            <element signature="method#onDestroy#0;class#HairDressersActivity#0" />
+            <element signature="method#search#0;class#HairDressersActivity#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable/linear_layout_top_corners.xml" />
+    <entry file="file://$USER_HOME$/AppData/Local/Android/Sdk/sources/android-28/android/graphics/Shader.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="398">
+          <caret line="74" column="28" selection-start-line="74" selection-start-column="8" selection-end-line="74" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/values/colors.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="21" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/styles/zonetech/net/styles/Adapters/ShopsAdapter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="305">
+          <caret line="146" column="39" selection-start-line="146" selection-start-column="39" selection-end-line="146" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="464">
+          <caret line="45" column="46" selection-start-line="45" selection-start-column="41" selection-end-line="45" selection-end-column="56" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/styles/zonetech/net/styles/Listeners/OnSwipeItemClicked.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="22" selection-start-line="3" selection-start-column="9" selection-end-line="3" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/styles/zonetech/net/styles/Adapters/SliderAdapter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="48" column="57" selection-start-line="48" selection-start-column="57" selection-end-line="48" selection-end-column="57" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1483#1674#0" expanded="true" />
+            <element signature="e#1673#1674#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/image_slider_layout_item.xml">
+      <provider editor-type-id="android-designer2" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="38" selection-start-column="38" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/search_bar.xml">
+      <provider editor-type-id="android-designer2" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="663">
+          <caret line="39" column="44" selection-start-line="39" selection-start-column="44" selection-end-line="39" selection-end-column="44" />
+          <folding>
+            <element signature="e#1322#1346#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/styles/zonetech/net/styles/Utils/RoundedDrawable.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="32" column="56" selection-start-line="32" selection-start-column="56" selection-end-line="32" selection-end-column="56" />
+          <folding>
+            <element signature="e#1604#1605#0" expanded="true" />
+            <element signature="e#1678#1679#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/mipmap-xxxhdpi/placeholder.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_maps.xml">
+      <provider editor-type-id="android-designer2" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="83" column="31" lean-forward="true" selection-start-line="83" selection-start-column="31" selection-end-line="83" selection-end-column="31" />
+          <folding>
+            <element signature="e#7074#7094#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/snippet_toolbar.xml">
+      <provider editor-type-id="android-designer2" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="246">
+          <caret line="44" column="44" selection-start-line="44" selection-start-column="29" selection-end-line="44" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/styles/zonetech/net/styles/Activities/MapsActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="125" column="54" selection-start-line="125" selection-start-column="54" selection-end-line="125" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/values-ar/strings.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-317">
+          <caret line="154" column="44" lean-forward="true" selection-start-line="154" selection-start-column="44" selection-end-line="154" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/mipmap-hdpi/ic_launcher.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/styles/zonetech/net/styles/Activities/AboutActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#onCreate#0;class#AboutActivity#0" />
+            <element signature="method#setListeners#0;class#AboutActivity#0" />
+            <element signature="method#initViews#0;class#AboutActivity#0" />
+            <element signature="method#mStartActivity#0;class#AboutActivity#0" />
+            <element signature="method#onDestroy#0;class#AboutActivity#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/styles/zonetech/net/styles/Dialogs/MenuDialog.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="108" column="62" selection-start-line="108" selection-start-column="62" selection-end-line="108" selection-end-column="62" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/styles/zonetech/net/styles/Utils/CommonMethods.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="32" column="5" selection-start-line="32" selection-start-column="5" selection-end-line="32" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/styles/zonetech/net/styles/Activities/SignupActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="407">
+          <caret line="70" column="40" lean-forward="true" selection-start-line="70" selection-start-column="40" selection-end-line="70" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/styles/zonetech/net/styles/Activities/LoginActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="269" selection-start-line="269" selection-end-line="269" />
+          <folding>
+            <element signature="e#5994#7118#0" expanded="true" />
+            <element signature="e#7117#7118#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/styles/zonetech/net/styles/Activities/UserAccountActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="272" column="20" selection-start-line="272" selection-start-column="20" selection-end-line="272" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/styles/zonetech/net/styles/Dialogs/ListsDialog.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2956">
+          <caret line="345" column="70" selection-start-line="345" selection-start-column="70" selection-end-line="345" selection-end-column="70" />
+          <folding>
+            <element signature="e#13180#13214#0" expanded="true" />
+            <element signature="e#13247#13281#0" expanded="true" />
+            <element signature="e#13316#13358#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="331">
+          <caret line="133" selection-start-line="133" selection-end-line="133" />
+        </state>
+      </provider>
+      <provider editor-type-id="android-manifest" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/styles/zonetech/net/styles/Activities/HomeActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="48" column="32" lean-forward="true" selection-start-line="48" selection-start-column="32" selection-end-line="48" selection-end-column="32" />
+          <folding>
+            <element signature="method#initViews#0;class#HomeActivity#0" />
+            <element signature="method#setListeners#0;class#HomeActivity#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_home.xml">
+      <provider selected="true" editor-type-id="android-designer2" />
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="30" column="42" lean-forward="true" selection-start-line="30" selection-start-column="42" selection-end-line="30" selection-end-column="42" />
         </state>
       </provider>
     </entry>

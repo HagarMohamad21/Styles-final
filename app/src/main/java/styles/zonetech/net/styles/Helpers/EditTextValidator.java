@@ -4,24 +4,18 @@ import android.content.Context;
 import android.support.design.widget.Snackbar;
 import android.support.v4.content.ContextCompat;
 import android.text.TextUtils;
-import android.util.Log;
 import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import styles.zonetech.net.styles.Listeners.NetworkResponse;
 import styles.zonetech.net.styles.R;
 import styles.zonetech.net.styles.Utils.RoundedDrawable;
 
 public class EditTextValidator {
 
-    NetworkResponse networkResponse;
 
-    public void setNetworkResponse(NetworkResponse networkResponse) {
-        this.networkResponse = networkResponse;
-    }
 
     Context mContext;
     boolean valid=false;
@@ -37,7 +31,6 @@ public class EditTextValidator {
           valid=true;
         }
 else{
-    // show Toast
            valid=false;
         }
        return valid; }
@@ -78,16 +71,6 @@ else{
            snackbar=Snackbar.make(rootSnack,mContext.getString(R.string.connection_validation),Snackbar.LENGTH_LONG);
         }
         if(!hide){
-
-
-//            snackbar.setAction("RETRY", new View.OnClickListener() {
-//                @Override
-//                public void onClick(View view) {
-//                    // we should here retry network connection
-//                    networkResponse.onRetryClicked(identifier);
-//                }
-//            });
-
             View sbView = snackbar.getView();
             sbView.setBackground(ContextCompat.getDrawable(mContext,R.drawable.custom_snackbar_background));
             TextView textView =  sbView.findViewById(android.support.design.R.id.snackbar_text);

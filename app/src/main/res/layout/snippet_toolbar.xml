@@ -47,7 +47,6 @@
             android:layout_height="0dp"
             android:gravity="center"
             android:tag="bold"
-            android:text="@string/account"
             android:textColor="@color/colorAccent"
             android:textSize="@dimen/toolbarTextSize"
             app:layout_constraintBottom_toBottomOf="@+id/backBtn"

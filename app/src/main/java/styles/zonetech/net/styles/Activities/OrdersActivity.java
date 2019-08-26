@@ -2,6 +2,7 @@ package styles.zonetech.net.styles.Activities;
 
 import android.content.Context;
 
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.support.constraint.ConstraintLayout;
 import android.support.v7.app.AppCompatActivity;
@@ -13,6 +14,9 @@ import android.widget.Button;
 import android.widget.FrameLayout;
 import android.widget.LinearLayout;
 import android.widget.TextView;
+
+import com.google.gson.Gson;
+
 import java.util.ArrayList;
 import retrofit2.Call;
 import retrofit2.Callback;
@@ -54,6 +58,8 @@ Parser parser;
         commonMethods.setupMenu();
         parser=new Parser(mContext);
         server= Common.getAPI();
+        if (Common.currentUser==null)
+        isUserLogged();
        initViews();
         videoLoader=new VideoLoader(mContext,loaderLayout);
         validator=new EditTextValidator(mContext);
@@ -131,6 +137,21 @@ validator.showSnackbar(rootSnack,false,"");
     public void onDestroy() {
         super.onDestroy();
         commonMethods.destroyMenu();
+    }
+    private boolean isUserLogged(){
+        boolean isLogged=false;
+        Gson gson = new Gson();
+        SharedPreferences userPref=getSharedPreferences(getPackageName(),0);;
+        String userJson = userPref.getString(Common.CURRENT_USER, null);
+        if(userJson!=null){
+            Common.currentUser = gson.fromJson(userJson, Models.class);
+            isLogged=true;
+        }
+        else {
+            isLogged=false;
+        }
+        return isLogged;
+
     }
 
 }

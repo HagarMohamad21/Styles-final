@@ -35,7 +35,7 @@ import styles.zonetech.net.styles.Utils.Common;
 
 
 public class OrdersAdapter extends RecyclerView.Adapter<OrdersAdapter.OrderViewHolder> {
-
+    private static final String TAG = "OrdersAdapter";
     ArrayList<Models> orders;
     Context mContext;
 EditTextValidator validator;
@@ -172,13 +172,16 @@ EditTextValidator validator;
         }
 
         private void openDialog(int givenLayoutType) {
-            ListsDialog dialog;
-            if(givenLayoutType==Common.DIALOG_LAYOUT_TYPE_ORDER_REJECTION){}
-            else{
+            ListsDialog dialog=new ListsDialog(mContext,givenLayoutType,-1, null, null, "", -1,null,null);
+
+            if(givenLayoutType==Common.DIALOG_LAYOUT_TYPE_ORDER_REJECTION){
+                Log.d(TAG, "openDialog: "+order.getOrderReasons());
                 dialog=new ListsDialog(mContext,givenLayoutType,-1, null, null, order.getOrderReasons(), -1,null,null);
+                dialog.show();
+                return;
 
             }
-            dialog=new ListsDialog(mContext,givenLayoutType,-1, null, null, "", -1,null,null);
+
             if(givenLayoutType==DIALOG_LAYOUT_TYPE_RATING){
                 dialog.setSendRatingCallback(new SendRatingCallback() {
                     @Override
@@ -220,8 +223,10 @@ EditTextValidator validator;
                 }
 
             }
+
             dialog.setDialogDismissListener(this);
             dialog.show();
+
         }
 
         private void cancelOrder() {

@@ -53,8 +53,11 @@ public class HairDressersActivity extends AppCompatActivity {
     String latitude, longitude,categoryid="",cityId;
     ConstraintLayout rootSnack;
     Parser parser;
+    String subCategory;
     EditTextValidator validator;
     ArrayList<Models> saloons=new ArrayList<>();
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -77,6 +80,7 @@ public class HairDressersActivity extends AppCompatActivity {
           switch (callingMethod){
               case "browseByLocation":
                   categoryid=getIntent().getStringExtra("gender");
+                  subCategory=getIntent().getStringExtra("subCategory");
                   latitude= String.valueOf(getIntent().getDoubleExtra("latitude",0));
                   longitude= String.valueOf(getIntent().getDoubleExtra("longitude",0));
                   browseByLocation();
@@ -87,6 +91,7 @@ public class HairDressersActivity extends AppCompatActivity {
                   break;
 
               case "browseByProvince":
+                  subCategory=getIntent().getStringExtra("subCategory");
                   cityId=getIntent().getStringExtra("cityId");
                   categoryid=getIntent().getStringExtra("gender");
                   browseByProvince();
@@ -238,16 +243,20 @@ public class HairDressersActivity extends AppCompatActivity {
         commonMethods.destroyMenu();
     }
 
+    private static final String TAG = "HairDressersActivity";
     private void browseByLocation() {
+        Log.d(TAG, "browseByLocation: subCat"+subCategory);
         videoLoader.load();
-        server.getSaloonsByMap("map",categoryid,latitude,longitude).enqueue(new Callback<String>() {
+        server.getSaloonsByMap("map",categoryid,latitude,longitude,subCategory).enqueue(new Callback<String>() {
             @Override
             public void onResponse(Call<String> call, Response<String> response) {
                 videoLoader.stop();
                 if(response.body()!=null){
                     parser.parse(response.body());
+                    Log.d(TAG, "onResponse: "+response.body());
                     if(parser.getStatus().equals("success")){
                         saloons=parser.getSaloons();
+                        Log.d(TAG, "onResponse: "+response.body());
                         intitOffers();
                     }
                     else{
@@ -291,8 +300,9 @@ public class HairDressersActivity extends AppCompatActivity {
     }
 
         private void browseByProvince() {
+            Log.d(TAG, "browseByProvince: subCat"+subCategory);
         videoLoader.load();
-        server.getSaloonsByArea("area",categoryid,cityId).enqueue(new Callback<String>() {
+        server.getSaloonsByArea("area",categoryid,cityId,subCategory).enqueue(new Callback<String>() {
             @Override
             public void onResponse(Call<String> call, Response<String> response) {
                 videoLoader.stop();
@@ -315,9 +325,4 @@ public class HairDressersActivity extends AppCompatActivity {
             }
         });
     }
-
-
-
-
-
 }

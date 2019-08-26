@@ -1,28 +1,15 @@
 package styles.zonetech.net.styles.ViewHolders;
 
-import android.app.Activity;
-import android.content.Context;
-import android.content.Intent;
-import android.graphics.Bitmap;
-import android.graphics.BitmapFactory;
+
 import android.support.annotation.NonNull;
 import android.support.constraint.ConstraintLayout;
 import android.support.v7.widget.RecyclerView;
-import android.text.Spannable;
-import android.util.Log;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
-import android.widget.RatingBar;
 import android.widget.TextView;
-
-import org.w3c.dom.Text;
-
-import styles.zonetech.net.styles.Activities.HairDresserActivity;
-import styles.zonetech.net.styles.Helpers.Fonts;
 import styles.zonetech.net.styles.R;
-import styles.zonetech.net.styles.Utils.RatingConfiguration;
-import styles.zonetech.net.styles.Utils.RoundedDrawable;
+
 
 public class ShopViewHolder extends RecyclerView.ViewHolder {
 

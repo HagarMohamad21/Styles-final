@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name" translatable="false">Styles</string>
+    <string name="app_name">Styles</string>
 
     <string name="title_activity_maps" translatable="false">Map</string>
 
@@ -22,7 +22,7 @@
     <string name="the_service">The items and the bill</string>
     <string name="adults">Adult</string>
     <string name="children">Child</string>
-
+    <string name="orderFeedback">Your order has been updated</string>
     <string name="cash_payment">Cash</string>
     <string name="card_no">Card number</string>
     <string name="submit">Submit</string>
@@ -105,7 +105,6 @@
     <string name="developed_by_zonetech">Developed by ZoneTech</string>
     <string name="switch_to_arabic">Switch to Arabic</string>
     <string name="add">Add</string>
-
 
 
     <string name="send">Send</string>
@@ -194,7 +193,11 @@
     <string name="terms">Terms</string>
     <string name="coupon">Enter coupon code</string>
     <string name="order_placed">Order Placed Successfully</string>
-    <string name="finished">Finished</string>>
+    <string name="finished">Finished</string>
+    <string name="MessageFeedback">You have a new message</string>
+    <string name="individual">Individuals</string>
+    <string name="saloons">Saloons</string>
+    <string name="browsing">Browsing</string>>
 
 
 </resources>

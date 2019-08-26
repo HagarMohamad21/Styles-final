@@ -3,6 +3,7 @@ package styles.zonetech.net.styles.Activities;
 import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.support.constraint.ConstraintLayout;
 import android.support.v7.app.AppCompatActivity;
@@ -15,6 +16,9 @@ import android.widget.EditText;
 import android.widget.FrameLayout;
 import android.widget.LinearLayout;
 import android.widget.TextView;
+
+import com.google.gson.Gson;
+
 import java.util.ArrayList;
 import retrofit2.Call;
 import retrofit2.Callback;
@@ -62,6 +66,8 @@ Parser parser;
         commonMethods.setupMenu();
         commonMethods.setupFont(findViewById(android.R.id.content));
         validator=new EditTextValidator(mContext);
+        if (Common.currentUser==null)
+            isUserLogged();
         parser=new Parser(mContext);
         initViews();
        Models models=new Models();
@@ -221,5 +227,22 @@ Parser parser;
         super.onDestroy();
         commonMethods.destroyMenu();
     }
+
+    private boolean isUserLogged(){
+        boolean isLogged=false;
+        Gson gson = new Gson();
+        SharedPreferences userPref=getSharedPreferences(getPackageName(),0);;
+        String userJson = userPref.getString(Common.CURRENT_USER, null);
+        if(userJson!=null){
+            Common.currentUser = gson.fromJson(userJson, Models.class);
+            isLogged=true;
+        }
+        else {
+            isLogged=false;
+        }
+        return isLogged;
+
+    }
+
 }
 

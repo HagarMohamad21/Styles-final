@@ -150,8 +150,10 @@ public boolean MessageSent=false;
                        getOrders(modelArray);
                        break;
 
+                   case "ordertext":
+                       break;
 
-               }
+                }
             }
         } catch (JSONException e) {
             e.printStackTrace();

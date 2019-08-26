@@ -31,4 +31,6 @@
     <string name="dollarIcon" translatable="false">&#xe90e;</string>
     <string name="errorIcon" translatable="false">&#xe918;</string>
     <string name="termsIcon" translatable="false" >&#xe9bb;</string>
+     <string name="couponIcon" translatable="false" >&#xe91a;</string>
+
 </resources>

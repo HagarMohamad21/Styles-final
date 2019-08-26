@@ -89,7 +89,6 @@ int orderPosition;
                     int pos=getAdapterPosition();
                     if(position!=RecyclerView.NO_POSITION){
                         dialogListener.onClickRow(pos);
-
                         if(itemCheckBox.getVisibility()==View.VISIBLE){
                             toggleCheckBox(pos,orderPosition);
                         }
@@ -98,6 +97,7 @@ int orderPosition;
                 }
             }
         });
+
     }
 
 

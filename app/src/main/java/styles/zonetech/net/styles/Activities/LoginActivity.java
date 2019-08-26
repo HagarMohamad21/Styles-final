@@ -21,6 +21,8 @@ import com.facebook.GraphRequest;
 import com.facebook.GraphResponse;
 import com.facebook.login.LoginManager;
 import com.facebook.login.LoginResult;
+import com.google.firebase.iid.FirebaseInstanceId;
+
 import org.json.JSONException;
 import org.json.JSONObject;
 import java.util.Arrays;
@@ -55,6 +57,7 @@ public class LoginActivity extends AppCompatActivity {
     Bundle extras;
    CallbackManager callbackManager;
     ConstraintLayout rootSnack;
+    private static final String TAG = "LoginActivity";
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -66,7 +69,6 @@ public class LoginActivity extends AppCompatActivity {
         validator=new EditTextValidator(mContext);
         server=Common.getAPI();
         initView();
-
         videoLoader=new VideoLoader(mContext,loaderLayout);
         setListeners();
        getBundle();
@@ -103,11 +105,15 @@ public class LoginActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                //validate Edit texts are not empty
+                String token= FirebaseInstanceId.getInstance().getToken();
+                Log.d(TAG, "onClick: "+token);
+
                if(validator.validate(passwordEditTxt)&&validator.validate(userNameEditTxt)){
                    String username=userNameEditTxt.getText().toString();
                    String password=passwordEditTxt.getText().toString();
                    //login in
-                   login("android","0",username,password);
+
+                   login("android",token,username,password);
                }
                   else{
                    //show toast
@@ -233,7 +239,7 @@ public class LoginActivity extends AppCompatActivity {
                             gotoCallingActivity();
                         }
                         else{
-                            Intent intent=new Intent(mContext,MapsActivity.class);
+                            Intent intent=new Intent(mContext,HomeActivity.class);
                             intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
                             startActivity(intent);
 
@@ -308,7 +314,7 @@ public class LoginActivity extends AppCompatActivity {
 
 
     public void facebookLogin(View view) {
-       LoginManager.getInstance().logInWithReadPermissions(this, Arrays.asList("email", "public_profile"));
+      // LoginManager.getInstance().logInWithReadPermissions(this, Arrays.asList("email", "public_profile"));
     }
 
 
@@ -333,7 +339,7 @@ public class LoginActivity extends AppCompatActivity {
                             gotoCallingActivity();
                         }
                         else{
-                            Intent intent=new Intent(mContext,MapsActivity.class);
+                            Intent intent=new Intent(mContext,HomeActivity.class);
                             intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
                             startActivity(intent);
                         }

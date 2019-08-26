@@ -16,7 +16,8 @@ public interface IServer {
      @POST("saloons")
      Call<String> getSaloonsByArea(@Field("type") String type,
                             @Field("categoryid") String categoryid,
-                            @Field("cityid") String cityid);
+                            @Field("cityid") String cityid,
+                            @Field("subcategoryid") String subCategory);
 
 
      @FormUrlEncoded
@@ -24,7 +25,10 @@ public interface IServer {
      Call<String> getSaloonsByMap(@Field("type") String type,
                             @Field("categoryid") String categoryid,
                             @Field("latitude") String latitude,
-                            @Field("longitude") String longitude);
+                            @Field("longitude") String longitude,
+                            @Field("subcategoryid") String subCategory
+
+     );
 
      @POST("cities")
      Call<String>getCities();

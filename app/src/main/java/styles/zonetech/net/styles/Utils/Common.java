@@ -16,9 +16,9 @@ public class Common {
 
 
 public static final int MenuItemHome=0;
-public static final int MenuItemMessages=1;
+public static final int MenuItemOrders=1;
 public static final int MenuItemAccount=2;
-public static final int MenuItemOrders=3;
+public static final int MenuItemMessages=3;
 public static final int MenuItemAbout=4;
 public static final int MenuItemTerms=5;
 
@@ -27,16 +27,16 @@ public static  String profileImagePath=null;
 public static float totalPrice=0;
  public static int childCount=0;
     public static int adultCount=0;
-    public static final int  DIALOG_LAYOUT_TYPE_MENU=10;
+    public static final int DIALOG_LAYOUT_TYPE_MENU=10;
     public static final int DIALOG_LAYOUT_TYPE_CONFIRM_ORDER=8;
-    public static final int  DIALOG_LAYOUT_TYPE_SERVICE=1;
+    public static final int DIALOG_LAYOUT_TYPE_SERVICE=1;
     public static final int DIALOG_LAYOUT_TYPE_OFFER=2;
     public static final int DIALOG_LAYOUT_TYPE_CITY=3;
     public static final int DIALOG_LAYOUT_TYPE_RATING=5;
     public static final int DIALOG_LAYOUT_TYPE_ORDER_DETAILS=6;
     public static final int DIALOG_LAYOUT_TYPE_ORDER_CANCEL=7;
     public static final int DIALOG_LAYOUT_TYPE_ORDER_REJECTION=8;
-  public static final int DIALOG_LAYOUT_TYPE_PROVINCE =4;
+  public static final int   DIALOG_LAYOUT_TYPE_PROVINCE =4;
     public static final int DIALOG_LIST_DEFAULT_SIZE=4;
     public static final int DIALOG_LAYOUT_IMAGE=9;
     public static final int DIALOG_LAYOUT_LOGIN=11;

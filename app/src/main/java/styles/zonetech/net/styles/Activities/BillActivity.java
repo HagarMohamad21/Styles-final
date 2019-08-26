@@ -20,6 +20,7 @@ import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
 import styles.zonetech.net.styles.Helpers.EditTextValidator;
+import styles.zonetech.net.styles.Helpers.Parser;
 import styles.zonetech.net.styles.Helpers.TextPatternFormatter;
 import styles.zonetech.net.styles.Helpers.VideoLoader;
 import styles.zonetech.net.styles.R;
@@ -30,7 +31,7 @@ import styles.zonetech.net.styles.Utils.CommonMethods;
 
 
 public class BillActivity extends AppCompatActivity {
-
+    private static final String TAG = "BillActivity";
     Button submitBtn;
     private Context mContext=BillActivity.this;
     Button menuBtn,backBtn;
@@ -45,6 +46,7 @@ public class BillActivity extends AppCompatActivity {
     VideoLoader loader;
     FrameLayout loaderLayout;
     IServer server;
+    Parser parser;
 
     String  constructedOrder="",orderScheduleFormat,coupon="";
     @Override
@@ -66,6 +68,7 @@ public class BillActivity extends AppCompatActivity {
         if(Common.currentSaloon.getCredit()==0){
             cardRadioBtn.setEnabled(false);
         }
+        parser=new Parser(mContext);
 
     }
 
@@ -189,13 +192,6 @@ public class BillActivity extends AppCompatActivity {
         startActivity(intent);
     }
 
-
-
-
-
-
-
-
     public void watch(){
         cardNumEditTxt.addTextChangedListener(new TextWatcher() {
 
@@ -296,15 +292,21 @@ loader.load();
                 orderScheduleFormat,
                 constructedOrder,String.valueOf(Common.currentSaloon.getCredit())
                 ,String.valueOf(Common.currentSaloon.getHouse())," ",coupon)
-
                 .enqueue(new Callback<String>() {
 
                     @Override
                     public void onResponse(Call<String> call, Response<String> response) {
                         loader.stop();
+                        Log.d(TAG, "onResponse: ************"+response.body());
+                        parser.parse(response.body());
+                        if (parser.getStatus().equals("success")){
+                            validator.ShowToast(getString(R.string.order_placed));
+                            mStartActivity(mContext,new OrdersActivity());
+                        }
+                        else {
+                            validator.ShowToast(parser.getCodeMessage());
+                        }
 
-                        validator.ShowToast(getString(R.string.order_placed));
-                        mStartActivity(mContext,new OrdersActivity());
                     }
 
                     @Override

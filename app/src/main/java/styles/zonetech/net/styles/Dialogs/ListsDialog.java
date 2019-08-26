@@ -7,14 +7,12 @@ import android.content.Intent;
 import android.content.SharedPreferences;
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
-import android.os.Build;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.constraint.ConstraintLayout;
 import android.support.v4.content.ContextCompat;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
-import android.util.Log;
 import android.view.View;
 import android.view.ViewGroup;
 import android.view.Window;
@@ -24,16 +22,13 @@ import android.widget.EditText;
 import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
-
 import com.facebook.AccessToken;
 import com.facebook.login.LoginManager;
-
 import styles.zonetech.net.styles.Activities.HairDresserActivity;
-import styles.zonetech.net.styles.Activities.LoginActivity;
+import styles.zonetech.net.styles.Activities.HomeActivity;
 import styles.zonetech.net.styles.Activities.MapsActivity;
 import styles.zonetech.net.styles.Helpers.EditTextValidator;
 import styles.zonetech.net.styles.Helpers.EmptyListInitiator;
-import styles.zonetech.net.styles.Listeners.ChainedCallbackForHairdresserTotal;
 import styles.zonetech.net.styles.Listeners.OnLoginClicked;
 import styles.zonetech.net.styles.Listeners.SendRatingCallback;
 import styles.zonetech.net.styles.Listeners.onCancelBtnClicked;
@@ -43,10 +38,7 @@ import styles.zonetech.net.styles.Models.Models;
 import styles.zonetech.net.styles.Utils.Common;
 import java.util.ArrayList;
 import java.util.HashMap;
-import java.util.HashSet;
 import java.util.Map;
-import java.util.Set;
-
 import styles.zonetech.net.styles.Adapters.DialogAdapter;
 import styles.zonetech.net.styles.Listeners.DialogDismissListener;
 import styles.zonetech.net.styles.R;
@@ -351,7 +343,7 @@ int personTotal;
 
                         }
 
-                        Intent intent=new Intent(context, MapsActivity.class);
+                        Intent intent=new Intent(context, HomeActivity.class);
                         intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
                         context.startActivity(intent);
 
@@ -442,9 +434,7 @@ int personTotal;
 
 
    private void setupRecyclerView(ArrayList<Models> list, int orderPosition) {
-
-           // this means it's either a child or an adult
-           if(list.size()==0){
+         if(list.size()==0){
                addBtn.setVisibility(View.GONE);
                if(givenLayoutType==Common.DIALOG_LAYOUT_TYPE_SERVICE)
                emptyListInitiator.setMessage(context.getString(R.string.no_service_message));

@@ -81,12 +81,20 @@ public class ForgotPasswordActivity extends AppCompatActivity {
                    server.recoverPassword(userNameEditTxt.getText().toString(),language).enqueue(new Callback<String>() {
                        @Override
                        public void onResponse(Call<String> call, Response<String> response) {
+
                            parser.parse(response.body());
-                           if(parser.getAction().equals("recovertext")){
-                               videoLoader.stop();
-                              validator.ShowToast(getString(R.string.email_recovery));
-                              finish();
+                           if(parser.getStatus().equals("success")){
+                               if(parser.getAction().equals("recovertext")){
+                                   videoLoader.stop();
+                                   validator.ShowToast(getString(R.string.email_recovery));
+                                   finish();
+                               }
                            }
+                           else {
+                               videoLoader.stop();
+                               validator.ShowToast(parser.getCodeMessage());
+                           }
+
                        }
 
                        @Override

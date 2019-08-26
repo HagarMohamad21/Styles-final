@@ -55,8 +55,7 @@ ChainedCallbackForHairdresserTotal chainedCallbackForHairdresserTotal;
         Fonts fonts=new Fonts(mContext);
         fonts.setTypeFce(itemView);
         server=Common.getAPI();
-
-loadServices();
+        loadServices();
 
 
 
@@ -67,6 +66,7 @@ loadServices();
         server.getServices(String.valueOf(Common.currentSaloon.getSaloonId())).enqueue(new Callback<String>() {
             @Override
             public void onResponse(Call<String> call, Response<String> response) {
+
                 Parser parser=new Parser(mContext);
                 parser.parse(response.body());
                 getSaloonServicesAndOffers(parser.getServices());

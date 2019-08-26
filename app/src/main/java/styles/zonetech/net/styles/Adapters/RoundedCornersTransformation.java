@@ -10,7 +10,7 @@ import android.graphics.Shader;
 import com.squareup.picasso.Transformation;
 
 
-public class RoundedCornersTransformation implements Transformation {
+public class  RoundedCornersTransformation implements Transformation {
 
     public enum CornerType {
         ALL,

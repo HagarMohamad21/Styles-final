@@ -99,21 +99,13 @@ setListeners();
 
     }
 
-
-
     public void mStartActivity(Context context, Activity activity){
         Intent intent=new Intent(context,activity.getClass());
         startActivity(intent);
     }
 
-
-    
-
-
-
-
-@Override
-public void onDestroy() {
+     @Override
+     public void onDestroy() {
     super.onDestroy();
     commonMethods.destroyMenu();
 }

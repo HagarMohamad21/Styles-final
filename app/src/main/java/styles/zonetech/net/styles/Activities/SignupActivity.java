@@ -21,6 +21,8 @@ import android.widget.EditText;
 import android.widget.FrameLayout;
 import android.widget.TextView;
 
+import com.google.firebase.iid.FirebaseInstanceId;
+
 import java.io.ByteArrayOutputStream;
 import java.io.File;
 import java.io.IOException;
@@ -70,6 +72,7 @@ public class SignupActivity extends AppCompatActivity implements DialogDismissLi
  boolean HasBundle=false;
     Bundle extras;
     ConstraintLayout rootSnack;
+    private static final String TAG = "SignupActivity";
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -117,6 +120,8 @@ public class SignupActivity extends AppCompatActivity implements DialogDismissLi
         registerBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                String token= FirebaseInstanceId.getInstance().getToken();
+                Log.d(TAG, "onClick: "+token);
                 if(validator.validate(passwordEditTxt)
                         &&validator.validate(userNameEditTxt)
                         &&validator.validate(mobileEditTxt)
@@ -128,7 +133,7 @@ public class SignupActivity extends AppCompatActivity implements DialogDismissLi
                     String password=passwordEditTxt.getText().toString();
                     //register
                     if(!IMAGE_SELECTED)
-                   register("android","0",userName,useremail,userphone,password);
+                   register("android",token,userName,useremail,userphone,password);
                     else registerWithImage("android","0",userName,useremail,userphone,password);
                 }
                 else{
@@ -294,7 +299,7 @@ public class SignupActivity extends AppCompatActivity implements DialogDismissLi
                                 gotoCallingActivity();
                             }
                             else{
-                                Intent intent=new Intent(mContext,MapsActivity.class);
+                                Intent intent=new Intent(mContext,HomeActivity.class);
                                 intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
                                 startActivity(intent);
                             }
@@ -347,7 +352,7 @@ public class SignupActivity extends AppCompatActivity implements DialogDismissLi
                             gotoCallingActivity();
                         }
                         else{
-                            Intent intent=new Intent(mContext,MapsActivity.class);
+                            Intent intent=new Intent(mContext,HomeActivity.class);
                             intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
                             startActivity(intent);
                         }

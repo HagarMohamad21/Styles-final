@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="browse">عرض</string>
+    <string name="app_name" >ستايلز</string>
     <string name="user_location">أنت هنا</string>
     <string name="male">ذكر</string>
     <string name="female">أنثي</string>
@@ -146,7 +147,12 @@
     <string name="coupon">  ادخل كود الكوبون</string>
     <string name="order_placed">تم تسجيل الطلب </string>
     <string name="finished">منتهي</string>
-
+    <string name="orderFeedback">لقد تم تحديث حالة طلبك</string>
+    <string name="MessageFeedback">لديك رسالة جديدة</string>
+    <string name="individual">أفراد
+</string>
+    <string name="saloons">صالونات</string>
+    <string name="browsing">إستعراض</string>
 
     <string-array  name="statesArray">
         <item >القاهرة</item>

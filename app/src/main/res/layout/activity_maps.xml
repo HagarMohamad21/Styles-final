@@ -48,7 +48,7 @@
         app:layout_constraintTop_toBottomOf="@id/areaBtn"
         android:text="@string/select_city"
 
-       />
+        />
     <TextView
         android:id="@+id/dropicon1"
         android:visibility="invisible"
@@ -81,7 +81,7 @@
 
     <include
         android:id="@+id/include"
-        layout="@layout/snippet_maps_toolbar" />
+        layout="@layout/snippet_toolbar" />
 
     <android.support.constraint.Guideline
         android:id="@+id/guidelineLeft"
@@ -176,36 +176,15 @@
         android:id="@+id/browseBtn"
         android:layout_width="0dp"
         android:layout_height="@dimen/viewsHeight"
-        android:layout_marginBottom="8dp"
         android:background="@drawable/rounded_yellow_button"
         android:tag="bold"
         android:text="@string/browse"
-        android:textAllCaps="false"
-        android:textColor="@color/white"
-        app:layout_constraintBottom_toTopOf="@+id/loginBtn"
-        app:layout_constraintEnd_toStartOf="@+id/guidelineRight"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/guidelineLeft" />
-
-    <Button
-        android:id="@+id/loginBtn"
-        android:layout_width="0dp"
-        android:layout_height="@dimen/viewsHeight"
-        android:background="@drawable/rounded_green_button"
-        android:tag="bold"
-        android:text="@string/login"
         android:textAllCaps="false"
         android:textColor="@color/white"
         app:layout_constraintBottom_toTopOf="@+id/guideline3"
         app:layout_constraintEnd_toStartOf="@+id/guidelineRight"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/guidelineLeft" />
-    <android.support.constraint.Guideline
-        android:id="@+id/guideline2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        app:layout_constraintGuide_begin="@dimen/horizontalTopGuidelineMargin" />
 
     <android.support.constraint.Guideline
         android:id="@+id/guideline3"
@@ -213,6 +192,14 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         app:layout_constraintGuide_end="@dimen/horizontalBottomGuidelineMargin" />
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="@dimen/horizontalTopGuidelineMargin" />
+
+
 
     <android.support.constraint.ConstraintLayout
         android:id="@+id/constraintLayout3"

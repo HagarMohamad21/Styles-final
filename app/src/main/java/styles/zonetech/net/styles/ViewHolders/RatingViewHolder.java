@@ -4,7 +4,6 @@ import android.support.annotation.NonNull;
 import android.support.v7.widget.RecyclerView;
 import android.view.View;
 import android.widget.TextView;
-
 import styles.zonetech.net.styles.Models.Models;
 import styles.zonetech.net.styles.R;
 import styles.zonetech.net.styles.Helpers.Fonts;

@@ -39,7 +39,6 @@ import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.Marker;
 import com.google.android.gms.maps.model.MarkerOptions;
 import com.google.gson.Gson;
-
 import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
@@ -54,46 +53,44 @@ import styles.zonetech.net.styles.R;
 import styles.zonetech.net.styles.Server.IServer;
 import styles.zonetech.net.styles.Utils.Common;
 import styles.zonetech.net.styles.Utils.CommonMethods;
-
 import static styles.zonetech.net.styles.Utils.Common.DIALOG_LAYOUT_TYPE_CITY;
 import static styles.zonetech.net.styles.Utils.Common.DIALOG_LAYOUT_TYPE_PROVINCE;
-
 
 public class MapsActivity extends FragmentActivity implements OnMapReadyCallback, DialogDismissListener {
     private boolean SearchIsOpen=false;
 
     private Context mContext=MapsActivity.this;
     private GoogleMap mMap;
-    TextView locationBtn,infoBtn,searchBtn,closeBtn;
+    TextView locationBtn;
     FusedLocationProviderClient fusedLocationProviderClient;
     LocationRequest locationRequest;
     LocationCallback locationCallback;
-    Button areaBtn,loginBtn,browseBtn;
-    TextView provinceDialog,cityDialog,dropicon1,dropicon;
-    EditText searchEditTxt;
+    Button areaBtn,browseBtn;
+    TextView provinceDialog,cityDialog,dropicon1,dropicon,toolbarTitleTxt;
+    Button menuBtn,backBtn;
     LinearLayout mapView;
     ListsDialog dialog;
     RadioGroup radioGroup;
     int givenLayoutType;
     private CommonMethods commonMethods;
-    NetworkValidator networkValidator;
     LatLng Location=null;
      Marker marker;
     FrameLayout loaderLayout;
     Parser parser;
     EditTextValidator validator;
-    String cityId=null,provinceid=null,categoryid;
-    InputMethodManager imm;
+    String cityId=null,provinceid=null,categoryid,subCategory;
     RadioButton maleRadio,femaleRadio;
     ConstraintLayout rootSnack;
     boolean FEMALE=false,MALE=false;
     IServer server;
+    private static final String TAG = "MapsActivity";
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
             setContentView(R.layout.activity_maps);
             commonMethods=new CommonMethods(mContext);
             commonMethods.setupFont(findViewById(android.R.id.content));
+        commonMethods.setupMenu();
             server=Common.getAPI();
            Common.orderDetailModels.clear();
             getCities(false);
@@ -104,6 +101,8 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
             .findFragmentById(R.id.map);
             mapFragment.getMapAsync(this);
             setListeners();
+        subCategory=getIntent().getStringExtra("subCategory");
+
         }
 
 
@@ -114,11 +113,8 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         mapView=findViewById(R.id.mapView);
          provinceDialog =findViewById(R.id.cityDialog);
         cityDialog=findViewById(R.id.areaDialog);
-        loginBtn=findViewById(R.id.loginBtn);
-        infoBtn=findViewById(R.id.infoBtn);
-        searchBtn=findViewById(R.id.searchBtn);
-        searchEditTxt=findViewById(R.id.searchEditTxt);
-        closeBtn=findViewById(R.id.closeBtn);
+         menuBtn=findViewById(R.id.menuBtn);
+         backBtn=findViewById(R.id.backBtn);
         dropicon1=findViewById(R.id.dropicon1);
         dropicon=findViewById(R.id.dropicon);
         radioGroup=findViewById(R.id.radioGroup);
@@ -126,11 +122,8 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         femaleRadio=findViewById(R.id.femaleRadio);
         maleRadio=findViewById(R.id.maleRadio);
         rootSnack=findViewById(R.id.rootSnack);
-
-        if(isUserLogged()){
-            //hide login btn
-            loginBtn.setVisibility(View.GONE);
-        }
+         toolbarTitleTxt=findViewById(R.id.toolbarTitleTxt);
+        toolbarTitleTxt.setText(getString(R.string.browsing));
     }
 
     @Override
@@ -236,7 +229,6 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
             @Override
             public void onClick(View v) {
                 Location=null;
-
                 //change text color to white
                 areaBtn.setTextColor(ContextCompat.getColor(mContext,R.color.white));
                 // change  areaBtn drawable to yellow
@@ -285,65 +277,16 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
 
             }
         });
-        loginBtn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                //navigate to loginActivity
-                mStartActivity(mContext,new LoginActivity());
-            }
-        });
-        searchBtn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                radioGroup.clearCheck();
-                for (int i = 0; i <radioGroup.getChildCount(); i++)
-                {
-                    radioGroup.getChildAt(i).setEnabled(false);
-                }
 
-                MALE=false; FEMALE=false;
-                //open an edit text in tool bar and hide info and search
-                searchBtn.setVisibility(View.INVISIBLE);
-                closeBtn.setVisibility(View.VISIBLE);
-                searchEditTxt.setVisibility(View.VISIBLE);
-                infoBtn.setVisibility(View.INVISIBLE);
-                searchEditTxt.requestFocus();
-                SearchIsOpen=true;
-                imm = (InputMethodManager) getSystemService(Context.INPUT_METHOD_SERVICE);
-                imm.showSoftInput(searchEditTxt, InputMethodManager.SHOW_IMPLICIT);
-            }
-        });
-        infoBtn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                //navigate to about activity
-                mStartActivity(mContext,new AboutActivity());
-            }
-        });
 
-        closeBtn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                maleRadio.setEnabled(true);
-                femaleRadio.setEnabled(true);
-                radioGroup.setEnabled(true);
-                SearchIsOpen=false;
-                searchBtn.setVisibility(View.VISIBLE);
-                closeBtn.setVisibility(View.INVISIBLE);
-                searchEditTxt.setVisibility(View.INVISIBLE);
-                infoBtn.setVisibility(View.VISIBLE);
 
-//close keyboard
-              try{
-                  imm = (InputMethodManager) getSystemService(Context.INPUT_METHOD_SERVICE);
-                  imm.hideSoftInputFromWindow(closeBtn.getWindowToken(), 0);
-              }
-              catch (Exception e){
 
-              }
 
-            }
-        });
+
+
+
+
+
 
         browseBtn.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -365,6 +308,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
                                 intent.putExtra("latitude",Location.latitude);
                                  intent.putExtra("longitude",Location.longitude);
                                 intent.putExtra("gender",categoryid);
+                                intent.putExtra("subCategory",subCategory);
                                 startActivity(intent);
 
                             }
@@ -382,6 +326,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
                             intent.putExtra("callingMethod","browseByProvince");
                             intent.putExtra("cityId",cityId);
                             intent.putExtra("gender",categoryid);
+                            intent.putExtra("subCategory",subCategory);
 
                             startActivity(intent);
                         }
@@ -444,56 +389,26 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
             }
         });
 
-        searchEditTxt.setOnEditorActionListener(new TextView.OnEditorActionListener() {
+        menuBtn.setOnClickListener(new View.OnClickListener() {
             @Override
-            public boolean onEditorAction(TextView v, int actionId, KeyEvent event) {
-                if (actionId == EditorInfo.IME_ACTION_SEARCH) {
-                    if(!TextUtils.isEmpty(searchEditTxt.getText().toString())){
-                        Location=null;
-                        Intent intent=new Intent(mContext,HairDressersActivity.class);
-                        intent.putExtra("callingMethod","search");
-                        intent.putExtra("keyword",searchEditTxt.getText().toString());
-                        //close keyboard
-                        View view = MapsActivity.this.getCurrentFocus();
-                        //If no view currently has focus, create a new one, just so we can grab a window token from it
-                        if (view == null) {
-                            view = new View(MapsActivity.this);
-                        }
-                        imm = (InputMethodManager) getSystemService(Context.INPUT_METHOD_SERVICE);
-                        imm.hideSoftInputFromWindow(view.getWindowToken(), 0);
-                        SearchIsOpen=false;
-                        searchBtn.setVisibility(View.VISIBLE);
-                        closeBtn.setVisibility(View.INVISIBLE);
-                        searchEditTxt.setVisibility(View.INVISIBLE);
-                        infoBtn.setVisibility(View.VISIBLE);
-                        searchEditTxt.setText("");
-                        for (int i = 0; i <radioGroup.getChildCount(); i++)
-                        {
-                            radioGroup.getChildAt(i).setEnabled(true);
-                        }
-                        startActivity(intent);
-                    }
-                    else {
-                        validator.ShowToast(getString(R.string.validation_string));
-                    }
-                    return true;
-                }
-                return false;
+            public void onClick(View v) {
+                commonMethods.showMenu();
+            }
+        });
+
+        backBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+//                Common.orderDetailModels.clear();
+                finish();
             }
         });
     }
-
-
 
     public void mStartActivity(Context context, Activity activity){
         Intent intent=new Intent(context,activity.getClass());
        startActivity(intent);
     }
-
-
-
-
-
 
     @SuppressLint("MissingPermission")
     public void requestLocationUpdates(){
@@ -503,7 +418,6 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         }
 
     }
-
 
     @Override
     public void onDialogDismissed(Models item,int pos) {
@@ -533,68 +447,12 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
 
 
 
-
-
-
-    private boolean isUserLogged(){
-        boolean isLogged=false;
-        Gson gson = new Gson();
-        SharedPreferences userPref=getSharedPreferences(getPackageName(),0);;
-        String userJson = userPref.getString(Common.CURRENT_USER, null);
-        if(userJson!=null){
-            Common.currentUser = gson.fromJson(userJson, Models.class);
-            isLogged=true;
-        }
-else {
-            isLogged=false;
-        }
-        return isLogged;
-
-    }
-
     @Override
     public void onDestroy() {
         super.onDestroy();
         commonMethods.destroyMenu();
     }
 
-//    @Override
-//    public void onRetryClicked(String identifier) {
-//        validator.showSnackbar(rootSnack,true,"");
-//        Log.d(TAG, "onRetryClicked: ");
-//
-//        try {
-//            synchronized (this){
-//
-//                while (!networkValidator.isNetworkAvailable()){
-//
-//                    try {
-//                        Log.d(TAG, "onRetryClicked: waiting.....");
-//
-//
-//                    } catch (Exception e) {
-//                        e.printStackTrace();
-//                    }
-//                }
-//                notify();
-//
-//            }
-//
-//
-//
-//        } catch (Exception e) {
-//            e.printStackTrace();
-//        }
-//        synchronized (this){
-//if(identifier.equals("browseByLocation"))
-//    browseByLocation();
-//            Log.d(TAG, "onRetryClicked: Network is available");
-//
-//        }
-//
-//
-//
-//    }
 
     public void getCities(final boolean fromDialog){
         Common.cities.clear();

@@ -13,6 +13,7 @@ import android.view.Window;
 import java.util.ArrayList;
 
 import styles.zonetech.net.styles.Activities.AboutActivity;
+import styles.zonetech.net.styles.Activities.HomeActivity;
 import styles.zonetech.net.styles.Activities.LoginActivity;
 import styles.zonetech.net.styles.Activities.MapsActivity;
 import styles.zonetech.net.styles.Activities.MessagesActivity;
@@ -71,14 +72,14 @@ ArrayList<Models>list=new ArrayList<>();
 
 
     private void initMenuList(){
-    Models itemOne=new Models(context.getString(R.string.home),context.getString(R.string.homeIcon));
-        Models itemTwo=new Models(context.getString(R.string.messages),context.getString(R.string.messagesIcon));
-        Models itemThree=new Models(context.getString(R.string.account),context.getString(R.string.personIcon));
+        Models itemOne=new Models(context.getString(R.string.home),context.getString(R.string.homeIcon));
         Models itemFour=new Models(context.getString(R.string.orders),context.getString(R.string.ordersIcon));
+        Models itemThree=new Models(context.getString(R.string.account),context.getString(R.string.personIcon));
+        Models itemTwo=new Models(context.getString(R.string.messages),context.getString(R.string.messagesIcon));
         Models itemFive=new Models(context.getString(R.string.about),context.getString(R.string.infoIcon));
         Models itemSix=new Models(context.getString(R.string.terms),context.getString(R.string.termsIcon));
 
-      list.add(itemOne);list.add(itemTwo);list.add(itemThree);list.add(itemFour);list.add(itemFive);list.add(itemSix);
+      list.add(itemOne);list.add(itemFour);list.add(itemThree);list.add(itemTwo);list.add(itemFive);list.add(itemSix);
     }
 
 
@@ -104,8 +105,8 @@ ArrayList<Models>list=new ArrayList<>();
        switch (position){
 
            case MenuItemHome:
-               if(!(context instanceof MapsActivity)){
-                   mStartActivity(context,new MapsActivity());
+               if(!(context instanceof HomeActivity)){
+                   mStartActivity(context,new HomeActivity());
                    dismiss();}
 
                else {dismiss();}
