@@ -34,9 +34,14 @@ public boolean MessageSent=false;
     String[] errorcodes;
     ArrayList<Models>services=new ArrayList<>();
     ArrayList<String> gallery=new ArrayList<>();
+    ArrayList<String> slides=new ArrayList<>();
     ArrayList<Models>reviews=new ArrayList<>();
     ArrayList<Models> saloons=new ArrayList<>();
     ArrayList<Models> orders=new ArrayList<>();
+
+    public ArrayList<String> getSlides() {
+        return slides;
+    }
 
     public ArrayList<Models> getOrders() {
         return orders;
@@ -153,7 +158,26 @@ public boolean MessageSent=false;
                    case "ordertext":
                        break;
 
+                   case "slidestext":
+                       getSlides(jsonArray);
+                       break;
+
                 }
+            }
+        } catch (JSONException e) {
+            e.printStackTrace();
+        }
+    }
+
+    private static final String TAG = "Parser";
+    private void getSlides(JSONArray jsonArray) {
+        try {
+
+            for(int i=0;i<jsonArray.length();i++){
+                Log.d(TAG, "getSlides: "+jsonArray.length());
+                Log.d(TAG, "getSlides: "+jsonArray.getJSONArray(1).get(i).toString());
+                slides.add(jsonArray.getJSONArray(1).get(i).toString());
+
             }
         } catch (JSONException e) {
             e.printStackTrace();

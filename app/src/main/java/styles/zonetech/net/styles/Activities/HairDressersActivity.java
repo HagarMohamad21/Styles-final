@@ -1,6 +1,7 @@
 package styles.zonetech.net.styles.Activities;
 
 import android.content.Context;
+import android.content.Intent;
 import android.os.Build;
 import android.support.annotation.RequiresApi;
 import android.support.constraint.ConstraintLayout;
@@ -225,7 +226,10 @@ public class HairDressersActivity extends AppCompatActivity {
         backBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                finish();
+                NO_OFFERS_SELECTED=true;
+                Intent intent = new Intent(mContext, HomeActivity.class);
+                intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
+                startActivity(intent);
             }
         });
 
@@ -233,8 +237,11 @@ public class HairDressersActivity extends AppCompatActivity {
 
     @Override
     public void onBackPressed() {
-        NO_OFFERS_SELECTED=true;
         super.onBackPressed();
+        NO_OFFERS_SELECTED=true;
+        Intent intent = new Intent(mContext, HomeActivity.class);
+        intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
+        startActivity(intent);
     }
 
     @Override
@@ -325,4 +332,8 @@ public class HairDressersActivity extends AppCompatActivity {
             }
         });
     }
+
+
+
+
 }

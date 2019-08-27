@@ -156,6 +156,8 @@ public interface IServer {
 
 
 
+    @POST("slides")
+    Call<String>getSlidersImages();
 
 
 }

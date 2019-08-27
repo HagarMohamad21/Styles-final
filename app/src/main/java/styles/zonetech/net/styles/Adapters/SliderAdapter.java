@@ -15,6 +15,7 @@ import java.util.ArrayList;
 
 import styles.zonetech.net.styles.Listeners.OnSwipeItemClicked;
 import styles.zonetech.net.styles.R;
+import styles.zonetech.net.styles.Utils.Common;
 
 public class SliderAdapter extends SliderViewAdapter<SliderAdapter.SliderAdapterVH> {
     private static final String TAG = "SliderAdapter";
@@ -38,8 +39,10 @@ public class SliderAdapter extends SliderViewAdapter<SliderAdapter.SliderAdapter
 
     @Override
     public void onBindViewHolder(SliderAdapterVH viewHolder, int position) {
+        StringBuilder url=new StringBuilder(Common.sliderImagesUrl);
+        url.append(imageUrls.get(position));
                 Picasso.get()
-                        .load(imageUrls.get(position))
+                        .load(url.toString())
                         .into(viewHolder.imageViewBackground);
                 
                 

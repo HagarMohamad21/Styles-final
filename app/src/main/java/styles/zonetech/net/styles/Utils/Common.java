@@ -47,6 +47,7 @@ public static float totalPrice=0;
     public static Models currentUser=null;
     public static String domainName="https://www.stylesapps.com/app/";
     public static String galleryImagesUrl="https://www.stylesapps.com/photos/galleries/";
+    public static String sliderImagesUrl="https://www.stylesapps.com/photos/settings/";
     public static String saloonImagesUrl="https://www.stylesapps.com/photos/saloons/";
     public static String userImageUrl="https://www.stylesapps.com/photos/users/";
     public static Models currentSaloon=null;
