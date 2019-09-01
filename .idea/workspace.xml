@@ -13,33 +13,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="48097ff1-4724-4c06-bfb5-62d99caca6ff" name="Default Changelist" comment="reduced height of recycler view">
-      <change afterPath="$PROJECT_DIR$/app/src/main/assets/fonts/Cairo-Bold.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/assets/fonts/Cairo-Regular.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/assets/fonts/styles.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/styles/zonetech/net/styles/FireBase/FireBaseInstanceIDService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/styles/zonetech/net/styles/FireBase/FireBaseMessagingService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/styles/zonetech/net/styles/Server/DataProvider.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/styles/zonetech/net/styles/Server/Loaders.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/styles/zonetech/net/styles/Utils/MapView.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/styles/zonetech/net/styles/Utils/ViewUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable-ar/left_button_rect_grey.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable-ar/left_button_rect_yellow.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable-ar/right_button_rect_grey.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable-ar/right_button_rect_yellow.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable-v24/logo.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/rounded_corners_dialog_back_with_padding.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_forgot_password.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/gallery_list_item.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/list_dialog_layout.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-hdpi/ic_launcher.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-mdpi/ic_launcher.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-xhdpi/ic_launcher.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-xxhdpi/ic_launcher.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/values-ar/strings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/values/icon_strings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/xml/file_paths.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.1.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.1.1/executionHistory/executionHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.1.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.1.1/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.1.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.1.1/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.1.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.1.1/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.1.1/javaCompile/classAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.1.1/javaCompile/classAnalysis.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.1.1/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.1.1/javaCompile/javaCompile.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/caches/gradle_models.ser" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/caches/gradle_models.ser" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/app.iml" beforeDir="false" afterPath="$PROJECT_DIR$/app/app.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -47,6 +34,11 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="DefaultGradleProjectSettings">
+    <option name="testRunner" value="GRADLE" />
+    <option name="delegatedBuild" value="true" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="197dce2e9804" />
   <component name="ExternalProjectsManager">
     <system id="GRADLE">
       <state>
@@ -58,34 +50,7 @@
         </task>
         <projects_view>
           <tree_state>
-            <expand>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="Styles" type="f1a62948:ProjectNode" />
-              </path>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="Styles" type="f1a62948:ProjectNode" />
-                <item name="Styles" type="2d1252cf:ModuleNode" />
-              </path>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="Styles" type="f1a62948:ProjectNode" />
-                <item name="Styles" type="2d1252cf:ModuleNode" />
-                <item name="Tasks" type="e4a08cd1:TasksNode" />
-              </path>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="Styles" type="f1a62948:ProjectNode" />
-                <item name=":app" type="2d1252cf:ModuleNode" />
-              </path>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="Styles" type="f1a62948:ProjectNode" />
-                <item name=":app" type="2d1252cf:ModuleNode" />
-                <item name="Tasks" type="e4a08cd1:TasksNode" />
-              </path>
-            </expand>
+            <expand />
             <select />
           </tree_state>
         </projects_view>
@@ -98,44 +63,50 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/styles/zonetech/net/styles/Activities/HomeActivity.java">
+        <entry file="file://$PROJECT_DIR$/build.gradle">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="595">
-              <caret line="255" selection-start-line="255" selection-end-line="255" />
-              <folding>
-                <element signature="method#onCreate#0;class#HomeActivity#0" />
-                <element signature="method#getBanners#0;class#HomeActivity#0" />
-                <element signature="method#showBanners#0;class#HomeActivity#0" />
-                <element signature="method#initViews#0;class#HomeActivity#0" />
-                <element signature="method#setListeners#0;class#HomeActivity#0" />
-                <element signature="method#isUserLogged#0;class#HomeActivity#0" />
-              </folding>
+            <state relative-caret-position="425">
+              <caret line="25" column="19" selection-start-line="25" selection-start-column="19" selection-end-line="25" selection-end-column="19" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/build.gradle">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="323">
+              <caret line="19" column="16" selection-start-line="19" selection-start-column="16" selection-end-line="19" selection-end-column="16" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/styles/zonetech/net/styles/Activities/HairDressersActivity.java">
+        <entry file="file://$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-137">
-              <caret line="58" column="48" lean-forward="true" selection-start-line="58" selection-start-column="48" selection-end-line="58" selection-end-column="48" />
-              <folding>
-                <element signature="method#onCreate#0;class#HairDressersActivity#0" />
-                <element signature="method#getBundle#0;class#HairDressersActivity#0" />
-                <element signature="method#populateShopList#0;class#HairDressersActivity#0" />
-                <element signature="method#intitOffers#0;class#HairDressersActivity#0" />
-                <element signature="method#initViews#0;class#HairDressersActivity#0" />
-                <element signature="method#setListeners#0;class#HairDressersActivity#0" />
-                <element signature="e#8552#8920#0" expanded="true" />
-                <element signature="e#8919#8920#0" expanded="true" />
-                <element signature="method#onBackPressed#0;class#HairDressersActivity#0" />
-                <element signature="method#onDestroy#0;class#HairDressersActivity#0" />
-                <element signature="method#browseByLocation#0;class#HairDressersActivity#0" />
-                <element signature="method#search#0;class#HairDressersActivity#0" />
-                <element signature="method#browseByProvince#0;class#HairDressersActivity#0" />
-              </folding>
+            <state relative-caret-position="85">
+              <caret line="5" column="79" selection-start-line="5" selection-start-column="79" selection-end-line="5" selection-end-column="79" />
             </state>
           </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/proguard-rules.pro">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/gradle.properties">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/settings.gradle">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/local.properties">
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
     </leaf>
@@ -186,7 +157,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/app/src/main/java/styles/zonetech/net/styles/ViewHolders/DialogViewHolder.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/styles/zonetech/net/styles/Helpers/EditTextValidator.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/styles/zonetech/net/styles/ViewHolders/ShopViewHolder.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/styles/zonetech/net/styles/ViewHolders/RatingViewHolder.java" />
@@ -237,6 +207,7 @@
         <option value="$PROJECT_DIR$/app/src/main/java/styles/zonetech/net/styles/Activities/HomeActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/styles/zonetech/net/styles/Activities/MapsActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/styles/zonetech/net/styles/Activities/HairDressersActivity.java" />
+        <option value="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" />
       </list>
     </option>
   </component>
@@ -253,9 +224,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="AndroidView" />
       <pane id="Scope" />
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -267,6 +236,22 @@
           <select />
         </subPane>
       </pane>
+      <pane id="AndroidView">
+        <subPane>
+          <expand>
+            <path>
+              <item name="Styles-final" type="1abcf292:AndroidViewProjectNode" />
+              <item name="app" type="feadf853:AndroidModuleNode" />
+            </path>
+            <path>
+              <item name="Styles-final" type="1abcf292:AndroidViewProjectNode" />
+              <item name="Gradle Scripts" type="ae0cef3a:AndroidBuildScriptsGroupNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -274,16 +259,20 @@
     <property name="ExportApk.BuildVariants" value="debug" />
     <property name="ExportApk.SignV1" value="true" />
     <property name="ExportApk.SignV2" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="ToolWindowBuild.ShowToolbar" value="false" />
     <property name="android.sdk.path" value="$USER_HOME$/AppData/Local/Android/Sdk" />
     <property name="device.picker.selection" value="197dce2e9804" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/app/src/main/res/values" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/app/debug/debug/app-debug.apk" />
-    <property name="project.structure.last.edited" value="Project" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="project.structure.last.edited" value="Suggestions" />
     <property name="project.structure.proportion" value="0.17" />
-    <property name="project.structure.side.proportion" value="0.0" />
-    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="http.proxy" />
     <property name="sync.plugin.last.upgrade.timestamp" value="1560247184114" />
+  </component>
+  <component name="PsdUISettings">
+    <option name="LAST_EDITED_BUILD_TYPE" value="release" />
   </component>
   <component name="RecentsManager">
     <key name="ExtractSuperBase.RECENT_KEYS">
@@ -428,6 +417,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Captures" order="0" sideWeight="0.5057283" side_tool="true" weight="0.21709532" />
       <window_info id="Structure" order="1" sideWeight="0.5008183" side_tool="true" weight="0.34039333" />
@@ -436,21 +426,21 @@
       <window_info id="Image Layers" order="4" />
       <window_info id="Designer" order="5" />
       <window_info id="Capture Tool" order="6" />
-      <window_info content_ui="combo" id="Project" order="7" sideWeight="0.49590835" weight="0.21633889" />
+      <window_info content_ui="combo" id="Project" order="7" sideWeight="0.49590835" visible="true" weight="0.2730711" />
       <window_info anchor="bottom" id="Logcat" order="0" weight="0.95090014" />
       <window_info anchor="bottom" id="TODO" order="1" weight="0.4844517" />
       <window_info anchor="bottom" id="Debug" order="2" weight="0.32922733" />
       <window_info anchor="bottom" id="Terminal" order="3" weight="0.95090014" />
       <window_info anchor="bottom" id="Version Control" order="4" weight="0.88870704" />
-      <window_info anchor="bottom" id="Build" order="5" sideWeight="0.49924356" weight="0.39770868" />
+      <window_info anchor="bottom" id="Build" order="5" sideWeight="0.49924356" weight="0.57610476" />
       <window_info anchor="bottom" id="Find" order="6" weight="0.6579378" />
       <window_info anchor="bottom" id="Android Profiler" order="7" weight="0.95090014" />
       <window_info anchor="bottom" id="Messages" order="8" weight="0.32922733" />
       <window_info anchor="bottom" id="Resources Explorer" order="9" sideWeight="0.50226927" side_tool="true" weight="0.7692308" />
-      <window_info active="true" anchor="bottom" id="Run" order="10" sideWeight="0.4977307" visible="true" weight="0.95090014" />
+      <window_info anchor="bottom" id="Run" order="10" sideWeight="0.4977307" weight="0.95090014" />
       <window_info anchor="right" id="Event Log" order="0" sideWeight="0.5008183" side_tool="true" weight="0.08698941" />
       <window_info anchor="right" id="Capture Analysis" order="1" />
-      <window_info anchor="right" id="Gradle" order="2" sideWeight="0.49918166" weight="0.3290469" />
+      <window_info anchor="right" id="Gradle" order="2" sideWeight="0.49918166" weight="0.5075643" />
       <window_info anchor="right" id="Theme Preview" order="3" />
       <window_info anchor="right" id="Palette&#9;" order="4" />
       <window_info anchor="right" id="Preview" order="5" sideWeight="0.497545" weight="0.34568834" />
@@ -495,50 +485,6 @@
     <option name="LAST_COMMIT_MESSAGE" value="reduced height of recycler view" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/styles/zonetech/net/styles/Listeners/onPersonTotalComputed.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="20" selection-start-line="3" selection-start-column="20" selection-end-line="3" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/styles/zonetech/net/styles/Server/Client.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="9" column="50" selection-start-line="9" selection-start-column="50" selection-end-line="9" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/styles/zonetech/net/styles/Models/Models.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="118" column="10" selection-start-line="118" selection-start-column="10" selection-end-line="118" selection-end-column="10" />
-          <folding>
-            <element signature="e#3855#3856#0" expanded="true" />
-            <element signature="e#3889#3890#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/values/icon_strings.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="481">
-          <caret line="33" column="70" selection-start-line="33" selection-start-column="70" selection-end-line="33" selection-end-column="70" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_bill.xml">
-      <provider editor-type-id="android-designer2" />
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="229" column="40" selection-start-line="229" selection-start-column="40" selection-end-line="229" selection-end-column="40" />
-          <folding>
-            <element signature="e#9740#9761#0" expanded="true" />
-            <element signature="e#10183#10204#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/styles/zonetech/net/styles/Activities/SplashActivity.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
@@ -550,16 +496,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.daimajia.slider/library/1.1.5/5040bee95115677508106e1a42cd685bdc570369/library-1.1.5-sources.jar!/com/daimajia/slider/library/SliderTypes/BaseSliderView.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2193">
-          <caret line="209" column="74" lean-forward="true" selection-start-line="209" selection-start-column="59" selection-end-line="209" selection-end-column="74" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.daimajia.slider/library/1.1.5/5040bee95115677508106e1a42cd685bdc570369/library-1.1.5-sources.jar!/com/daimajia/slider/library/SliderTypes/BaseSliderView.java" />
     <entry file="file://$PROJECT_DIR$/app/src/main/java/styles/zonetech/net/styles/Adapters/DialogAdapter.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
@@ -617,13 +554,6 @@
             <element signature="method#drawBottomRightRoundRect#0;class#RoundedCornersTransformation#0" />
             <element signature="method#drawTopRoundRect#0;class#RoundedCornersTransformation#0" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/build.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" selection-start-line="3" selection-end-line="3" />
         </state>
       </provider>
     </entry>
@@ -689,13 +619,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="305">
           <caret line="146" column="39" selection-start-line="146" selection-start-column="39" selection-end-line="146" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/build.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="464">
-          <caret line="45" column="46" selection-start-line="45" selection-start-column="41" selection-end-line="45" selection-end-column="56" />
         </state>
       </provider>
     </entry>
@@ -918,9 +841,29 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/styles/zonetech/net/styles/Activities/HairDressersActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="60" lean-forward="true" selection-start-line="60" selection-end-line="60" />
+          <folding>
+            <element signature="method#onCreate#0;class#HairDressersActivity#0" />
+            <element signature="method#getBundle#0;class#HairDressersActivity#0" />
+            <element signature="method#populateShopList#0;class#HairDressersActivity#0" />
+            <element signature="method#intitOffers#0;class#HairDressersActivity#0" />
+            <element signature="method#initViews#0;class#HairDressersActivity#0" />
+            <element signature="method#setListeners#0;class#HairDressersActivity#0" />
+            <element signature="method#onBackPressed#0;class#HairDressersActivity#0" />
+            <element signature="method#onDestroy#0;class#HairDressersActivity#0" />
+            <element signature="method#browseByLocation#0;class#HairDressersActivity#0" />
+            <element signature="method#search#0;class#HairDressersActivity#0" />
+            <element signature="method#browseByProvince#0;class#HairDressersActivity#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/styles/zonetech/net/styles/Activities/HomeActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="595">
+        <state relative-caret-position="499">
           <caret line="255" selection-start-line="255" selection-end-line="255" />
           <folding>
             <element signature="method#onCreate#0;class#HomeActivity#0" />
@@ -933,25 +876,36 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/styles/zonetech/net/styles/Activities/HairDressersActivity.java">
+    <entry file="file://$PROJECT_DIR$/build.gradle">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-137">
-          <caret line="58" column="48" lean-forward="true" selection-start-line="58" selection-start-column="48" selection-end-line="58" selection-end-column="48" />
-          <folding>
-            <element signature="method#onCreate#0;class#HairDressersActivity#0" />
-            <element signature="method#getBundle#0;class#HairDressersActivity#0" />
-            <element signature="method#populateShopList#0;class#HairDressersActivity#0" />
-            <element signature="method#intitOffers#0;class#HairDressersActivity#0" />
-            <element signature="method#initViews#0;class#HairDressersActivity#0" />
-            <element signature="method#setListeners#0;class#HairDressersActivity#0" />
-            <element signature="e#8552#8920#0" expanded="true" />
-            <element signature="e#8919#8920#0" expanded="true" />
-            <element signature="method#onBackPressed#0;class#HairDressersActivity#0" />
-            <element signature="method#onDestroy#0;class#HairDressersActivity#0" />
-            <element signature="method#browseByLocation#0;class#HairDressersActivity#0" />
-            <element signature="method#search#0;class#HairDressersActivity#0" />
-            <element signature="method#browseByProvince#0;class#HairDressersActivity#0" />
-          </folding>
+        <state relative-caret-position="425">
+          <caret line="25" column="19" selection-start-line="25" selection-start-column="19" selection-end-line="25" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="19" column="16" selection-start-line="19" selection-start-column="16" selection-end-line="19" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/local.properties">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/settings.gradle">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gradle.properties">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/proguard-rules.pro">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="79" selection-start-line="5" selection-start-column="79" selection-end-line="5" selection-end-column="79" />
         </state>
       </provider>
     </entry>
