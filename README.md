@@ -1,5 +1,8 @@
 Styles is an application that help you find the nearset barber shops (and beauty centers) to you , you can also have them over to your house with the best deals
 
+APK FILE HERE
+https://drive.google.com/file/d/1L4kwjwLzpWpZ19dPOMmk9hAZXO66YV_P/view?usp=sharing
+
 
 ![Screenshot_2019-09-01-13-43-59-600_styles zonetech net styles](https://user-images.githubusercontent.com/27670207/64076014-fe5f7780-ccbf-11e9-91c4-9644f738fb5d.png)
 ![Screenshot_2019-09-01-13-43-55-270_styles zonetech net styles](https://user-images.githubusercontent.com/27670207/64076015-fe5f7780-ccbf-11e9-8bd2-ab9185e0b8af.png)
