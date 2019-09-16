@@ -130,18 +130,11 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         app:layout_constraintGuide_end="@dimen/horizontalBottomGuidelineMargin" />
-    <Button
-        android:id="@+id/loginBtn"
-        android:layout_width="0dp"
-        android:layout_height="@dimen/viewsHeight"
-        android:background="@drawable/rounded_green_button"
-        android:tag="bold"
-        android:text="@string/login"
-        android:textAllCaps="false"
-        android:textColor="@color/white"
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
         app:layout_constraintBottom_toTopOf="@+id/guideline3"
-        app:layout_constraintEnd_toStartOf="@+id/guidelineRight"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/guidelineLeft" />
+        tools:layout_editor_absoluteX="199dp" />
 
 </android.support.constraint.ConstraintLayout>

@@ -309,7 +309,6 @@ else{
 
     }
 
-
     private boolean askForPermission()
     {
         //first check for permission if not granted ask for it
@@ -329,7 +328,6 @@ else{
         }
     }
 
-
     @Override
     public void onRequestPermissionsResult(int requestCode, @NonNull String[] permissions, @NonNull int[] grantResults) {
         super.onRequestPermissionsResult(requestCode, permissions, grantResults);
@@ -342,8 +340,6 @@ else{
 
             }
         }}
-
-
 
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
@@ -384,8 +380,6 @@ else{
 
 
     }
-
-
 
     private void editAccount(final String userName, final String useremail, final String userphone, final String password) {
 

@@ -52,7 +52,6 @@ public class HomeActivity extends AppCompatActivity {
     RoundedDrawable roundedDrawable;
     float density;
     CommonMethods commonMethods;
-    Button loginBtn;
     IServer server;
 
     @Override
@@ -134,11 +133,11 @@ public class HomeActivity extends AppCompatActivity {
         roundedDrawable = new RoundedDrawable(profilePic, density, 20, 250, 350, false, mContext);
         individualImage.setImageDrawable(roundedDrawable);
         saloonImage.setImageDrawable(roundedDrawable);
-        loginBtn = findViewById(R.id.loginBtn);
-        if (isUserLogged()) {
-            //hide login btn
-            loginBtn.setVisibility(View.GONE);
-        }
+//        loginBtn = findViewById(R.id.loginBtn);
+//        if (isUserLogged()) {
+//            //hide login btn
+//            loginBtn.setVisibility(View.GONE);
+//        }
     }
 
 
@@ -225,17 +224,16 @@ public class HomeActivity extends AppCompatActivity {
             }
         });
 
-
-        loginBtn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                //navigate to loginActivity
-                Intent intent = new Intent(mContext, LoginActivity.class);
-                startActivity(intent);
-            }
-        });
+//
+//        loginBtn.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                //navigate to loginActivity
+//                Intent intent = new Intent(mContext, LoginActivity.class);
+//                startActivity(intent);
+//            }
+//        });
     }
-
 
     private boolean isUserLogged() {
         boolean isLogged = false;
