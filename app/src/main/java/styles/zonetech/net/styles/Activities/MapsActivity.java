@@ -78,7 +78,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
     FrameLayout loaderLayout;
     Parser parser;
     EditTextValidator validator;
-    String cityId=null,provinceid=null,categoryid,subCategory;
+    String cityId=null,provinceid=null,categoryid,category;
     RadioButton maleRadio,femaleRadio;
     ConstraintLayout rootSnack;
     boolean FEMALE=false,MALE=false;
@@ -101,7 +101,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
             .findFragmentById(R.id.map);
             mapFragment.getMapAsync(this);
             setListeners();
-        subCategory=getIntent().getStringExtra("subCategory");
+        category=getIntent().getStringExtra("category");
 
         }
 
@@ -297,7 +297,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
                                 intent.putExtra("latitude",Location.latitude);
                                  intent.putExtra("longitude",Location.longitude);
                                 intent.putExtra("gender",categoryid);
-                                intent.putExtra("subCategory",subCategory);
+                                intent.putExtra("category",category);
                                 startActivity(intent);
 
                             }
@@ -315,7 +315,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
                             intent.putExtra("callingMethod","browseByProvince");
                             intent.putExtra("cityId",cityId);
                             intent.putExtra("gender",categoryid);
-                            intent.putExtra("subCategory",subCategory);
+                            intent.putExtra("category",category);
 
                             startActivity(intent);
                         }

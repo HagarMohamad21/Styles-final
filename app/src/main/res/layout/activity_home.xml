@@ -5,6 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".Activities.HomeActivity">
+
     <android.support.constraint.Guideline
         android:id="@+id/guidelineLeft"
         android:layout_width="wrap_content"
@@ -18,6 +19,7 @@
         android:layout_height="match_parent"
         android:orientation="vertical"
         app:layout_constraintGuide_end="@dimen/verticalGuidelineMargin" />
+
     <include
         android:id="@+id/include"
         layout="@layout/search_bar" />
@@ -37,7 +39,9 @@
     <com.smarteist.autoimageslider.SliderView
         android:id="@+id/sliderView"
         android:layout_width="0dp"
-        android:layout_height="200dp"
+        android:layout_height="0dp"
+        app:layout_constraintVertical_weight="40"
+        app:layout_constraintBottom_toTopOf="@+id/twoCategoriesLayout"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/divider"
@@ -53,77 +57,96 @@
         app:sliderIndicatorRadius="1dp"
         app:sliderIndicatorSelectedColor="#5A5A5A"
         app:sliderIndicatorUnselectedColor="#FFF"
-        app:sliderScrollTimeInSec="2"
-        />
-    <android.support.constraint.Guideline
-        android:id="@+id/middleGuideLine"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        app:layout_constraintGuide_percent="0.5" />
+        app:sliderScrollTimeInSec="2" />
 
-    <LinearLayout
-        android:id="@+id/saloonsLayout"
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/twoCategoriesLayout"
         android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="@dimen/innerSpacing"
-        android:layout_marginTop="20dp"
-        android:layout_marginEnd="@dimen/innerSpacing"
-        android:orientation="vertical"
-        app:layout_constraintEnd_toStartOf="@+id/middleGuideLine"
-        app:layout_constraintStart_toStartOf="@+id/guidelineLeft"
-        app:layout_constraintTop_toBottomOf="@+id/sliderView">
-
-        <ImageView
-            android:id="@+id/saloonImage"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:src="@mipmap/placeholder"
-            android:adjustViewBounds="true"
-
-            />
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="@dimen/viewsHeight"
-            android:background="@color/colorAccent"
-            android:gravity="center"
-            android:text="@string/saloons"
-            android:tag="bold"
-            android:textAlignment="gravity"
-            android:textColor="@color/white" />
-    </LinearLayout>
-
-    <LinearLayout
-        android:id="@+id/individualLayout"
-        android:layout_width="0dp"
-        android:layout_marginTop="20dp"
-        android:layout_height="wrap_content"
+        app:layout_constraintVertical_weight="45"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/bottomRecycler"
         app:layout_constraintEnd_toStartOf="@id/guidelineRight"
-        app:layout_constraintStart_toEndOf="@+id/middleGuideLine"
-        android:orientation="vertical"
-        android:layout_marginStart="@dimen/innerSpacing"
-        android:layout_marginEnd="@dimen/innerSpacing"
+        app:layout_constraintStart_toEndOf="@id/guidelineLeft"
         app:layout_constraintTop_toBottomOf="@+id/sliderView">
-        <ImageView
-            android:id="@+id/individualImage"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:src="@mipmap/placeholder"
-            android:adjustViewBounds="true"
-           />
 
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="@dimen/viewsHeight"
-            android:textColor="@color/white"
-            android:textAlignment="gravity"
-            android:gravity="center"
-            android:tag="bold"
-            android:text="@string/individual"
-            android:background="@color/colorAccent"
-            />
-    </LinearLayout>
+        <android.support.constraint.Guideline
+            android:id="@+id/middleGuideLine"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.5" />
+
+        <LinearLayout
+            android:id="@+id/saloonsLayout"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:weightSum="10"
+            android:layout_marginTop="@dimen/homeScreenInnerSpacing"
+            android:layout_marginEnd="@dimen/homeScreenHalfSpacing"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/middleGuideLine"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:id="@+id/saloonImage"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="8"
+                android:scaleType="centerCrop"
+                android:src="@mipmap/download"
+
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="2"
+                android:background="@color/colorAccent"
+                android:gravity="center"
+                android:tag="bold"
+                android:text="@string/saloons"
+                android:textAlignment="gravity"
+                android:textColor="@color/white" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/individualLayout"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="@dimen/homeScreenHalfSpacing"
+            android:layout_marginTop="@dimen/homeScreenInnerSpacing"
+            android:orientation="vertical"
+            android:weightSum="10"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/middleGuideLine"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:id="@+id/individualImage"
+                android:layout_weight="8"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:adjustViewBounds="true"
+                android:scaleType="centerCrop"
+                android:src="@mipmap/placeholder" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="2"
+                android:background="@color/colorAccent"
+                android:gravity="center"
+                android:tag="bold"
+                android:text="@string/individual"
+                android:textAlignment="gravity"
+                android:textColor="@color/white" />
+        </LinearLayout>
+    </android.support.constraint.ConstraintLayout>
+
     <android.support.constraint.Guideline
         android:id="@+id/guideline3"
         android:layout_width="wrap_content"
@@ -131,10 +154,18 @@
         android:orientation="horizontal"
         app:layout_constraintGuide_end="@dimen/horizontalBottomGuidelineMargin" />
 
+
     <android.support.v7.widget.RecyclerView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        app:layout_constraintBottom_toTopOf="@+id/guideline3"
-        tools:layout_editor_absoluteX="199dp" />
+        android:id="@+id/bottomRecycler"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:clipToPadding="false"
+        android:layout_marginTop="@dimen/homeScreenInnerSpacing"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/twoCategoriesLayout"
+        app:layout_constraintVertical_weight="15" />
+
 
 </android.support.constraint.ConstraintLayout>

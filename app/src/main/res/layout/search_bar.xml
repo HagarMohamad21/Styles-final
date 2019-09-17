@@ -38,6 +38,21 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             android:text="@string/searchIcon" />
+      <TextView
+            android:id="@+id/closeBtn"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:gravity="center"
+            android:layout_marginStart="@dimen/toolbarIconMargin"
+            android:textSize="17sp"
+            android:tag="icon"
+           android:visibility="invisible"
+            android:background="@drawable/yellow_circle"
+            android:textColor="@color/white"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:text="@string/closeIcon" />
 
 
         <EditText
@@ -52,6 +67,7 @@
             android:inputType="textPersonName"
             android:padding="5dp"
             android:tag="bold"
+            android:visibility="invisible"
             android:textColor="@color/white"
             android:textColorHint="@color/darkGrey"
             android:textCursorDrawable="@color/grey"

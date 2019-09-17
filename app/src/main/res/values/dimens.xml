@@ -37,6 +37,8 @@
     <dimen name="iconTextSize">20dp</dimen>
     <dimen name="menuIconTextSize">18dp</dimen>
 <dimen name="innerSpacing">10dp</dimen>
+    <dimen name="homeScreenInnerSpacing">10dp</dimen>
+    <dimen name="homeScreenHalfSpacing">5dp</dimen>
     <dimen name="iconTextPadding">5dp</dimen>
     <dimen name="radioGroupWidth">195dp</dimen>
 <dimen name="elevation">5dp</dimen>

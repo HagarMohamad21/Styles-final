@@ -51,10 +51,10 @@ public class HairDressersActivity extends AppCompatActivity {
     VideoLoader videoLoader;
     FrameLayout loaderLayout;
     IServer server;
-    String latitude, longitude,categoryid="",cityId;
+    String latitude, longitude, subCategory ="",cityId;
     ConstraintLayout rootSnack;
     Parser parser;
-    String subCategory;
+    String category;
     EditTextValidator validator;
     ArrayList<Models> saloons=new ArrayList<>();
 
@@ -80,8 +80,8 @@ public class HairDressersActivity extends AppCompatActivity {
           String callingMethod=getIntent().getStringExtra("callingMethod");
           switch (callingMethod){
               case "browseByLocation":
-                  categoryid=getIntent().getStringExtra("gender");
-                  subCategory=getIntent().getStringExtra("subCategory");
+                  subCategory =getIntent().getStringExtra("gender");
+                  category=getIntent().getStringExtra("category");
                   latitude= String.valueOf(getIntent().getDoubleExtra("latitude",0));
                   longitude= String.valueOf(getIntent().getDoubleExtra("longitude",0));
                   browseByLocation();
@@ -92,9 +92,9 @@ public class HairDressersActivity extends AppCompatActivity {
                   break;
 
               case "browseByProvince":
-                  subCategory=getIntent().getStringExtra("subCategory");
+                  category=getIntent().getStringExtra("category");
                   cityId=getIntent().getStringExtra("cityId");
-                  categoryid=getIntent().getStringExtra("gender");
+                  subCategory =getIntent().getStringExtra("gender");
                   browseByProvince();
                   break;
           }
@@ -184,8 +184,6 @@ public class HairDressersActivity extends AppCompatActivity {
                     offersBtnClicked=false;
                 }
 
-
-
             }
         });
 
@@ -252,9 +250,9 @@ public class HairDressersActivity extends AppCompatActivity {
 
     private static final String TAG = "HairDressersActivity";
     private void browseByLocation() {
-        Log.d(TAG, "browseByLocation: subCat"+subCategory);
+        Log.d(TAG, "browseByLocation: category"+category);
         videoLoader.load();
-        server.getSaloonsByMap("map",categoryid,latitude,longitude,subCategory).enqueue(new Callback<String>() {
+        server.getSaloonsByMap("map", category,latitude,longitude,subCategory).enqueue(new Callback<String>() {
             @Override
             public void onResponse(Call<String> call, Response<String> response) {
                 videoLoader.stop();
@@ -307,9 +305,9 @@ public class HairDressersActivity extends AppCompatActivity {
     }
 
         private void browseByProvince() {
-            Log.d(TAG, "browseByProvince: subCat"+subCategory);
+            Log.d(TAG, "browseByProvince: category"+category);
         videoLoader.load();
-        server.getSaloonsByArea("area",categoryid,cityId,subCategory).enqueue(new Callback<String>() {
+        server.getSaloonsByArea("area", category,cityId,subCategory).enqueue(new Callback<String>() {
             @Override
             public void onResponse(Call<String> call, Response<String> response) {
                 videoLoader.stop();

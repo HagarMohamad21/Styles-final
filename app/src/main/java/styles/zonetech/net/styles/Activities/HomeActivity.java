@@ -9,6 +9,8 @@ import android.graphics.Color;
 import android.os.Handler;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.widget.LinearLayoutManager;
+import android.support.v7.widget.RecyclerView;
 import android.text.TextUtils;
 import android.util.Log;
 import android.view.KeyEvent;
@@ -29,8 +31,10 @@ import java.util.ArrayList;
 import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
+import styles.zonetech.net.styles.Adapters.BottomAdapter;
 import styles.zonetech.net.styles.Adapters.SliderAdapter;
 import styles.zonetech.net.styles.Helpers.Parser;
+import styles.zonetech.net.styles.Listeners.OnCategoryClicked;
 import styles.zonetech.net.styles.Listeners.OnSwipeItemClicked;
 import styles.zonetech.net.styles.Models.Models;
 import styles.zonetech.net.styles.R;
@@ -41,18 +45,20 @@ import styles.zonetech.net.styles.Utils.RoundedDrawable;
 
 public class HomeActivity extends AppCompatActivity {
 
-    TextView searchBtn, menuBtn;
+    TextView  menuBtn;
+    TextView searchBtn,closeBtn;
     EditText searchEditTxt;
     ImageView individualImage, saloonImage;
     SliderView sliderView;
     LinearLayout saloonsLayout, individualLayout;
-    String subCategory;
+    String category;
     private Context mContext = HomeActivity.this;
     InputMethodManager imm;
     RoundedDrawable roundedDrawable;
     float density;
     CommonMethods commonMethods;
     IServer server;
+    RecyclerView bottomRecycler;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -65,6 +71,23 @@ public class HomeActivity extends AppCompatActivity {
         initViews();
         getBanners();
         setListeners();
+        populateBootomList();
+    }
+
+    private void populateBootomList() {
+
+        BottomAdapter adapter=new BottomAdapter(mContext,new ArrayList<String>());
+        bottomRecycler.setLayoutManager(new LinearLayoutManager(mContext,LinearLayoutManager.HORIZONTAL,false));
+        bottomRecycler.setAdapter(adapter);
+        adapter.setOnCategoryClicked(new OnCategoryClicked() {
+            @Override
+            public void onCategoryClicked(int pos) {
+                category=String.valueOf(pos);
+                Intent intent = new Intent(mContext, MapsActivity.class);
+                intent.putExtra("category",category);
+                startActivity(intent);
+            }
+        });
     }
 
     private void getBanners() {
@@ -130,9 +153,11 @@ public class HomeActivity extends AppCompatActivity {
         individualImage = findViewById(R.id.individualImage);
         density = mContext.getResources().getDisplayMetrics().density;
         Bitmap profilePic = BitmapFactory.decodeResource(mContext.getResources(), R.mipmap.placeholder);
-        roundedDrawable = new RoundedDrawable(profilePic, density, 20, 250, 350, false, mContext);
+        roundedDrawable = new RoundedDrawable(profilePic, density, 40, 400, 350, false, mContext);
         individualImage.setImageDrawable(roundedDrawable);
         saloonImage.setImageDrawable(roundedDrawable);
+        bottomRecycler=findViewById(R.id.bottomRecycler);
+        closeBtn=findViewById(R.id.closeBtn);
 //        loginBtn = findViewById(R.id.loginBtn);
 //        if (isUserLogged()) {
 //            //hide login btn
@@ -148,6 +173,8 @@ public class HomeActivity extends AppCompatActivity {
 
                 //open an edit text in tool bar and hide info and search
                 searchEditTxt.setVisibility(View.VISIBLE);
+                closeBtn.setVisibility(View.VISIBLE);
+                searchBtn.setVisibility(View.INVISIBLE);
                 searchEditTxt.requestFocus();
                 imm = (InputMethodManager) getSystemService(Context.INPUT_METHOD_SERVICE);
                 imm.showSoftInput(searchEditTxt, InputMethodManager.SHOW_IMPLICIT);
@@ -176,9 +203,9 @@ public class HomeActivity extends AppCompatActivity {
         saloonsLayout.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                subCategory = "1";
+                category = "1";
                 Intent intent = new Intent(mContext, MapsActivity.class);
-                intent.putExtra("subCategory", subCategory);
+                intent.putExtra("category", category);
                 startActivity(intent);
             }
         });
@@ -187,9 +214,9 @@ public class HomeActivity extends AppCompatActivity {
         individualLayout.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                subCategory = "2";
+                category = "2";
                 Intent intent = new Intent(mContext, MapsActivity.class);
-                intent.putExtra("subCategory", subCategory);
+                intent.putExtra("category", category);
                 startActivity(intent);
             }
         });
@@ -233,6 +260,24 @@ public class HomeActivity extends AppCompatActivity {
 //                startActivity(intent);
 //            }
 //        });
+
+        closeBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                imm = (InputMethodManager) getSystemService(Context.INPUT_METHOD_SERVICE);
+                View view = HomeActivity.this.getCurrentFocus();
+                //If no view currently has focus, create a new one, just so we can grab a window token from it
+                if (view == null) {
+                    view = new View(HomeActivity.this);
+                }
+                imm.hideSoftInputFromWindow(view.getWindowToken(), 0);
+                searchEditTxt.getText().clear();
+                searchBtn.setVisibility(View.VISIBLE);
+                closeBtn.setVisibility(View.INVISIBLE);
+                searchEditTxt.setVisibility(View.INVISIBLE);
+            }
+        });
     }
 
     private boolean isUserLogged() {
