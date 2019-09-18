@@ -96,7 +96,7 @@
                 android:layout_height="0dp"
                 android:layout_weight="8"
                 android:scaleType="centerCrop"
-                android:src="@mipmap/download"
+                android:src="@mipmap/placeholder"
 
                 />
 

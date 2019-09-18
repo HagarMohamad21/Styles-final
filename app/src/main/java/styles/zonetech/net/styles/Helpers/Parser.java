@@ -7,6 +7,7 @@ import android.util.Log;
 
 
 import com.google.gson.Gson;
+import com.google.gson.JsonArray;
 
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -173,9 +174,9 @@ public boolean MessageSent=false;
     private void getSlides(JSONArray jsonArray) {
         try {
 
-            for(int i=0;i<jsonArray.length();i++){
-                Log.d(TAG, "getSlides: "+jsonArray.length());
-                Log.d(TAG, "getSlides: "+jsonArray.getJSONArray(1).get(i).toString());
+            JSONArray slidesArray=jsonArray.getJSONArray(1);
+            Log.d(TAG, "getSlides: "+slidesArray.length());
+            for(int i=0;i<slidesArray.length();i++){
                 slides.add(jsonArray.getJSONArray(1).get(i).toString());
 
             }

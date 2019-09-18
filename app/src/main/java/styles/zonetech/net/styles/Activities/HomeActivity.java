@@ -90,6 +90,7 @@ public class HomeActivity extends AppCompatActivity {
         });
     }
 
+    private static final String TAG = "HomeActivity";
     private void getBanners() {
         server.getSlidersImages().enqueue(new Callback<String>() {
             @Override
@@ -97,6 +98,7 @@ public class HomeActivity extends AppCompatActivity {
                 Parser parser = new Parser(mContext);
                 parser.parse(response.body());
                 if (parser.getStatus().equals("success")) {
+                    Log.d(TAG, "onResponse: "+parser.getSlides());
                     showBanners(parser.getSlides());
                 }
             }
@@ -114,16 +116,6 @@ public class HomeActivity extends AppCompatActivity {
         adapter.setOnSwipeItemClicked(new OnSwipeItemClicked() {
             @Override
             public void onItemClicked() {
-//                sliderView.setAutoCycle(false);
-//
-//                final Handler handler = new Handler();
-//                handler.postDelayed(new Runnable() {
-//                    @Override
-//                    public void run() {
-//                        sliderView.setAutoCycle(true);
-//                        sliderView.startAutoCycle();
-//                    }
-//                }, 2000);
             }
         });
         sliderView.setSliderAdapter(adapter);

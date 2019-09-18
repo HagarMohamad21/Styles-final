@@ -187,7 +187,9 @@ public class SignupActivity extends AppCompatActivity implements DialogDismissLi
         ImagesHelper helper=new ImagesHelper(mContext);
         Intent PickIntent=helper.selectImage(Action);
         if(Common.ACTION_REQUEST==REQUEST_IMAGE_CAPTURE)
-        {startActivityForResult(PickIntent,REQUEST_IMAGE_CAPTURE);}
+        {startActivityForResult(PickIntent,REQUEST_IMAGE_CAPTURE);
+
+        }
         else if(Common.ACTION_REQUEST==REQUEST_IMAGE_GALLERY){
             startActivityForResult(PickIntent,REQUEST_IMAGE_GALLERY);
         }
